@@ -12,7 +12,7 @@ httpx[http2]==0.25.2
 motor
 numpy
 opencv-python
-pillow==9.5.0
+pillow==11.2.1
 psutil
 py-tgcalls==0.9.7
 ntgcalls==1.1.2
