@@ -8,7 +8,7 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-httpx[http2]==0.25.2
+httpx[http2]==0.28.1
 motor
 numpy
 opencv-python
