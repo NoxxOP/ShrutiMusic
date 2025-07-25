@@ -40,7 +40,7 @@ from ShrutiMusic.utils.formatters import alpha_to_int
 from config import adminlist
 
 # Add specific user IDs that can use the broadcast command
-BROADCAST_ALLOWED_IDS = [7574330905, 1786683163, 7674874652, 7282752816]
+BROADCAST_ALLOWED_IDS = [7054910452, 5968988297, 7846322674]
 
 IS_BROADCASTING = False
 

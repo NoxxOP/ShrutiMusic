@@ -3329,7 +3329,7 @@ async def send_repo(_, message: Message):
         ),
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📂 View Repository", url="http://github.com/NoxxOP/ShrutiMusic")]
+                [InlineKeyboardButton("📂 View Repository", url="https://github.com/RockMusicBot/ShrutiMusic.git")]
             ]
         ),
         supports_streaming=True,

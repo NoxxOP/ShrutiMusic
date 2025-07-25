@@ -16,9 +16,9 @@ updates:
       - "dependencies"
       - "python"
     assignees:
-      - "NoxxOP"
+      - "RockMusicBot"
     reviewers:
-      - "NoxxOP"
+      - "RockMusicBot"
     commit-message:
       prefix: "pip"
       include: "scope"
@@ -33,9 +33,9 @@ updates:
       - "dependencies"
       - "github-actions"
     assignees:
-      - "NoxxOP"
+      - "RockMusicBot"
     reviewers:
-      - "NoxxOP"
+      - "RockMusicBot"
     commit-message:
       prefix: "github-actions"
       include: "scope"
@@ -50,9 +50,9 @@ updates:
       - "dependencies"
       - "docker"
     assignees:
-      - "NoxxOP"
+      - "RockMusicBot"
     reviewers:
-      - "NoxxOP"
+      - "RockMusicBot"
     commit-message:
       prefix: "docker"
       include: "scope"
