@@ -8,9 +8,10 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from py_yt import VideosSearch
-from ShrutiMusic.utils.database import is_on_off
+from ShrutiMusic.utils.database import is_on_off, get_assistant
 from ShrutiMusic import app
 from ShrutiMusic.utils.formatters import time_to_seconds
+from ShrutiMusic.core.userbot import assistants
 import random
 import logging
 import aiohttp
@@ -43,6 +44,9 @@ except RuntimeError:
     pass
 
 async def get_telegram_file(telegram_link: str, video_id: str, file_type: str) -> str:
+    """Download file from Telegram using assistants with retry logic"""
+    logger = LOGGER("ShrutiMusic.platforms.Youtube.py")
+    
     try:
         extension = ".webm" if file_type == "audio" else ".mkv"
         file_path = os.path.join("downloads", f"{video_id}{extension}")
@@ -59,20 +63,51 @@ async def get_telegram_file(telegram_link: str, video_id: str, file_type: str) -
         channel_name = parts[0]
         message_id = int(parts[1])
         
-        msg = await app.get_messages(channel_name, message_id)
+        # Shuffle assistants to distribute load
+        shuffled_assistants = assistants.copy()
+        random.shuffle(shuffled_assistants)
         
-        os.makedirs("downloads", exist_ok=True)
-        await msg.download(file_name=file_path)
+        # Try with each available assistant
+        for idx, assistant_num in enumerate(shuffled_assistants):
+            try:
+                # Use unique chat_id for each assistant to get different client
+                temp_chat_id = -1000000000000 - assistant_num
+                assistant_client = await get_assistant(temp_chat_id)
+                
+                if not assistant_client:
+                    continue
+                
+                # Try to download with this assistant
+                msg = await assistant_client.get_messages(channel_name, message_id)
+                
+                os.makedirs("downloads", exist_ok=True)
+                await msg.download(file_name=file_path)
+                
+                # Wait for file to be downloaded
+                timeout = 0
+                while not os.path.exists(file_path) and timeout < 60:
+                    await asyncio.sleep(0.5)
+                    timeout += 0.5
+                
+                if os.path.exists(file_path):
+                    return file_path
+                
+            except Exception as e:
+                error_msg = str(e)
+                
+                # If FloodWait error, try next assistant
+                if "FLOOD_WAIT" in error_msg.upper() or "420" in error_msg:
+                    if idx < len(shuffled_assistants) - 1:
+                        continue
+                    else:
+                        return None
+                else:
+                    if idx < len(shuffled_assistants) - 1:
+                        continue
+                    else:
+                        return None
         
-        timeout = 0
-        while not os.path.exists(file_path) and timeout < 60:
-            await asyncio.sleep(0.5)
-            timeout += 0.5
-        
-        if os.path.exists(file_path):
-            return file_path
-        else:
-            return None
+        return None
         
     except Exception as e:
         return None
