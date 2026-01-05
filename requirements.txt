@@ -14,7 +14,7 @@ motor
 numpy
 opencv-python
 pytz
-pillow==9.5.0
+pillow==12.1.0
 psutil
 py-tgcalls==0.9.7
 pykeyboard
