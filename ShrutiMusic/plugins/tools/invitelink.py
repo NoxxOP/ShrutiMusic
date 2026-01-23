@@ -1,31 +1,14 @@
-# Copyright (c) 2025 Nand Yaduwanshi <NoxxOP>
-# Location: Supaul, Bihar
-#
+# Copyright (c) 2025 itz arjuna1
 # All rights reserved.
-#
-# This code is the intellectual property of Nand Yaduwanshi.
-# You are not allowed to copy, modify, redistribute, or use this
-# code for commercial or personal projects without explicit permission.
-#
-# Allowed:
-# - Forking for personal learning
-# - Submitting improvements via pull requests
-#
-# Not Allowed:
-# - Claiming this code as your own
-# - Re-uploading without credit or permission
-# - Selling or using commercially
-#
-# Contact for permissions:
-# Email: badboy809075@gmail.com
+
 
 
 import os
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
-from ShrutiMusic import app
-from ShrutiMusic.misc import SUDOERS
+from Oneforall import app
+from Oneforall.misc import SUDOERS
 from pyrogram.enums import ChatMemberStatus
 import asyncio
 
@@ -126,13 +109,6 @@ __HELP__ = """
 """
 
 
-# ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
+# ©️ Copyright Reserved - @itzarjuna1
 
-# ===========================================
-# ©️ 2025 Nand Yaduwanshi (aka @NoxxOP)
-# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
-# 📢 Telegram Channel : https://t.me/ShrutiBots
-# ===========================================
-
-
-# ❤️ Love From ShrutiBots 
+# dark Love From infinity bots 
