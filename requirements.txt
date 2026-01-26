@@ -16,7 +16,7 @@ opencv-python
 pytz
 pillow==9.5.0
 psutil
-py-tgcalls==0.9.7
+py-tgcalls==2.2.10
 pykeyboard
 kurigram==2.1.35
 python-dotenv
