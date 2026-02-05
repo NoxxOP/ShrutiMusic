@@ -69,7 +69,7 @@
     },
     "LOG_GROUP_ID": {
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-      "value": "-1002321189618",
+      "value": "",
       "required": true
     },
     "SUPPORT_GROUP": {
@@ -99,12 +99,12 @@
     },
     "DONATE": {
       "description": "Link where people can support/donate or Any Link",
-      "value": "https://t.me/ShrutiBots/91",
+      "value": "http://bit.ly/3NITa3G",
       "required": false
     },
     "START_IMG_URL": {
       "description": "Image that appears with the /start command",
-      "value": "",
+      "value": "https://graph.org/file/e054e63251ef2dc5729dd-6f719a9ecc59862631.png",
       "required": false
     }
   },

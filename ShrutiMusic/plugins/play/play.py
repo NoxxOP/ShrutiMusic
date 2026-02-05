@@ -1,5 +1,26 @@
+# Copyright (c) 2025 Nand Yaduwanshi <NoxxOP>
+# Location: Supaul, Bihar
+#
+# All rights reserved.
+#
+# This code is the intellectual property of Nand Yaduwanshi.
+# You are not allowed to copy, modify, redistribute, or use this
+# code for commercial or personal projects without explicit permission.
+#
+# Allowed:
+# - Forking for personal learning
+# - Submitting improvements via pull requests
+#
+# Not Allowed:
+# - Claiming this code as your own
+# - Re-uploading without credit or permission
+# - Selling or using commercially
+#
+# Contact for permissions:
+# Email: badboy809075@gmail.com
+
+
 import random
-import re
 import string
 
 from pyrogram import filters
@@ -26,118 +47,19 @@ from ShrutiMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
-def is_safe_url(url):
-    if not url or not isinstance(url, str):
-        return True
-    
-    url_lower = url.lower()
-    
-    command_injection_patterns = [
-        r';\s*curl',
-        r';\s*wget',
-        r';\s*bash',
-        r';\s*sh\s',
-        r';\s*cat\s',
-        r';\s*rm\s',
-        r';\s*chmod',
-        r';\s*python',
-        r';\s*perl',
-        r';\s*node',
-        r'\|\s*curl',
-        r'\|\s*wget',
-        r'\|\s*bash',
-        r'&&\s*curl',
-        r'&&\s*wget',
-        r'\$\{IFS\}',
-        r'\$IFS',
-        r'`curl',
-        r'`wget',
-        r'`cat',
-        r'\$\(curl',
-        r'\$\(wget',
-        r'\$\(cat',
-        r'@\.env',
-        r'\.env\s',
-        r'\.config\s',
-        r'/etc/passwd',
-        r'/etc/shadow',
-        r'file=@',
-        r'-F\s+file',
-        r'-X\s+POST',
-        r'javascript:',
-        r'<script',
-        r'eval\(',
-        r'exec\(',
-        r'system\(',
-        r'shell_exec',
-        r'file://',
-        r'%00',
-        r'%0a',
-        r'%0d',
-    ]
-    
-    for pattern in command_injection_patterns:
-        if re.search(pattern, url_lower, re.IGNORECASE):
-            return False
-    
-    if url.count(';') > 0 or url.count('|') > 1:
-        if 'youtube.com' in url_lower or 'youtu.be' in url_lower:
-            url_parts = url.split('?', 1)
-            if len(url_parts) > 1:
-                params = url_parts[1]
-                if ';' in params or '|' in params:
-                    suspicious_after = params.split(';')[1] if ';' in params else params.split('|')[1]
-                    if any(cmd in suspicious_after.lower() for cmd in ['curl', 'wget', 'bash', 'cat', 'env', 'file']):
-                        return False
-        else:
-            return False
-    
-    allowed_domains = [
-        'youtube.com',
-        'youtu.be',
-        'spotify.com',
-        'apple.com',
-        'music.apple.com',
-        'soundcloud.com',
-        'resso.com',
-    ]
-    
-    if url.startswith('http://') or url.startswith('https://'):
-        domain_match = re.search(r'https?://(?:www\.)?([^/?\s]+)', url)
-        if domain_match:
-            domain = domain_match.group(1).lower()
-            is_allowed = any(allowed in domain for allowed in allowed_domains)
-            if not is_allowed and not url.startswith('https://t.me/'):
-                return False
-    
-    return True
-
-
-def sanitize_query(query):
-    if not query or not isinstance(query, str):
-        return query
-    
-    query = query.strip()
-    
-    dangerous_patterns = [
-        r';\s*curl',
-        r';\s*wget',
-        r';\s*bash',
-        r'\|\s*curl',
-        r'\$\{IFS\}',
-        r'\.env',
-    ]
-    
-    for pattern in dangerous_patterns:
-        if re.search(pattern, query, re.IGNORECASE):
-            return None
-    
-    return query
-
-
 @app.on_message(
-   filters.command(["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"] ,prefixes=["", "/", "!", "%", ",", "", ".", "@", "#"])
-            
+    filters.command(
+        [
+            "play",
+            "vplay",
+            "cplay",
+            "cvplay",
+            "playforce",
+            "vplayforce",
+            "cplayforce",
+            "cvplayforce",
+        ]
+    )
     & filters.group
     & ~BANNED_USERS
 )
@@ -167,21 +89,11 @@ async def play_commnd(
         if message.reply_to_message
         else None
     )
-
     video_telegram = (
         (message.reply_to_message.video or message.reply_to_message.document)
         if message.reply_to_message
         else None
     )
-    
-    if url:
-        if not is_safe_url(url):
-            return await mystic.edit_text(
-                "⚠️ <b>Security Alert!</b>\n\n"
-                "<b>Invalid or potentially harmful URL detected.</b>\n"
-                "Only valid music platform URLs are allowed."
-            )
-    
     if audio_telegram:
         if audio_telegram.file_size > 104857600:
             return await mystic.edit_text(_["play_5"])
@@ -215,6 +127,7 @@ async def play_commnd(
                     forceplay=fplay,
                 )
             except Exception as e:
+                print(f"Error: {e}")
                 ex_type = type(e).__name__
                 err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
                 return await mystic.edit_text(err)
@@ -259,6 +172,7 @@ async def play_commnd(
                     forceplay=fplay,
                 )
             except Exception as e:
+                print(f"Error: {e}")
                 ex_type = type(e).__name__
                 err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
                 return await mystic.edit_text(err)
@@ -273,8 +187,7 @@ async def play_commnd(
                         config.PLAYLIST_FETCH_LIMIT,
                         message.from_user.id,
                     )
-                except Exception as e:
-                    print(e)
+                except:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "yt"
@@ -283,28 +196,18 @@ async def play_commnd(
                 else:
                     plist_id = url.split("=")[1]
                 img = config.PLAYLIST_IMG_URL
-                cap = _["play_10"]
-            elif "https://youtu.be" in url:
-                videoid = url.split("/")[-1].split("?")[0]
-                details, track_id = await YouTube.track(f"https://www.youtube.com/watch?v={videoid}")
-                streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_11"].format(
-                    details["title"],
-                    details["duration_min"],
-                )
+                cap = _["play_9"]
             else:
                 try:
                     details, track_id = await YouTube.track(url)
-                except Exception as e:
-                    print(e)
+                except:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
                 img = details["thumb"]
-                cap = _["play_11"].format(
+                cap = _["play_10"].format(
                     details["title"],
                     details["duration_min"],
-                                  )
+                )
         elif await Spotify.valid(url):
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
@@ -403,6 +306,7 @@ async def play_commnd(
                     forceplay=fplay,
                 )
             except Exception as e:
+                print(f"Error: {e}")
                 ex_type = type(e).__name__
                 err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
                 return await mystic.edit_text(err)
@@ -413,10 +317,11 @@ async def play_commnd(
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
-                    chat_id=config.LOGGER_ID,
+                    chat_id=config.LOG_GROUP_ID,
                     text=_["play_17"],
                 )
             except Exception as e:
+                print(f"Error: {e}")
                 return await mystic.edit_text(_["general_2"].format(type(e).__name__))
             await mystic.edit_text(_["str_2"])
             try:
@@ -433,6 +338,7 @@ async def play_commnd(
                     forceplay=fplay,
                 )
             except Exception as e:
+                print(f"Error: {e}")
                 ex_type = type(e).__name__
                 err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
                 return await mystic.edit_text(err)
@@ -446,16 +352,6 @@ async def play_commnd(
             )
         slider = True
         query = message.text.split(None, 1)[1]
-        
-        sanitized_query = sanitize_query(query)
-        if sanitized_query is None:
-            return await mystic.edit_text(
-                "⚠️ <b>Security Alert!</b>\n\n"
-                "<b>Invalid query detected.</b>\n"
-                "Please use valid search terms only."
-            )
-        query = sanitized_query
-        
         if "-v" in query:
             query = query.replace("-v", "")
         try:
@@ -499,6 +395,7 @@ async def play_commnd(
                 forceplay=fplay,
             )
         except Exception as e:
+            print(f"Error: {e}")
             ex_type = type(e).__name__
             err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
             return await mystic.edit_text(err)
@@ -626,6 +523,7 @@ async def play_music(client, CallbackQuery, _):
             forceplay=ffplay,
         )
     except Exception as e:
+        print(f"Error: {e}")
         ex_type = type(e).__name__
         err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
         return await mystic.edit_text(err)
@@ -724,6 +622,7 @@ async def play_playlists_command(client, CallbackQuery, _):
             forceplay=ffplay,
         )
     except Exception as e:
+        print(f"Error: {e}")
         ex_type = type(e).__name__
         err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
         return await mystic.edit_text(err)
@@ -759,4 +658,48 @@ async def slider_queries(client, CallbackQuery, _):
             await CallbackQuery.answer(_["playcb_2"])
         except:
             pass
-        title, duration_min, thumbnail,
+        title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
+        buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
+        med = InputMediaPhoto(
+            media=thumbnail,
+            caption=_["play_10"].format(
+                title.title(),
+                duration_min,
+            ),
+        )
+        return await CallbackQuery.edit_message_media(
+            media=med, reply_markup=InlineKeyboardMarkup(buttons)
+        )
+    if what == "B":
+        if rtype == 0:
+            query_type = 9
+        else:
+            query_type = int(rtype - 1)
+        try:
+            await CallbackQuery.answer(_["playcb_2"])
+        except:
+            pass
+        title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
+        buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
+        med = InputMediaPhoto(
+            media=thumbnail,
+            caption=_["play_10"].format(
+                title.title(),
+                duration_min,
+            ),
+        )
+        return await CallbackQuery.edit_message_media(
+            media=med, reply_markup=InlineKeyboardMarkup(buttons)
+        )
+
+
+# ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
+
+# ===========================================
+# ©️ 2025 Nand Yaduwanshi (aka @NoxxOP)
+# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
+# 📢 Telegram Channel : https://t.me/ShrutiBots
+# ===========================================
+
+
+# ❤️ Love From ShrutiBots 
