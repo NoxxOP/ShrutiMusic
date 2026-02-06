@@ -81,12 +81,12 @@ async def unauthorised(
     if bot_lacking_permission:
         text = (
             "I don't have the required permission to perform this action."
-            + f"\n**Permission:** __{permission}__"
+            + f"\n<b>Permission:</b> <code>{permission}</code>"
         )
     else:
         text = (
             "You don't have the required permission to perform this action."
-            + f"\n**Permission:** __{permission}__"
+            + f"\n<b>Permission:</b> <code>{permission}</code>"
         )
     try:
         await message.reply_text(text)
@@ -147,4 +147,4 @@ def adminsOnly(permission):
 # ===========================================
 
 
-# ❤️ Love From ShrutiBots 
+# ❤️ Love From ShrutiBots

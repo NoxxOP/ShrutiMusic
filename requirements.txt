@@ -1,3 +1,4 @@
+pyrofork
 gTTS
 aiofiles
 aiohttp
@@ -8,7 +9,7 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-httpx[http2]==0.25.2
+httpx
 motor
 numpy
 opencv-python
@@ -26,10 +27,10 @@ spotipy
 tgcrypto
 telegraph 
 unidecode
-uvloop
-yt-dlp
 youtube-search
 youtube-search-python
+py-yt-search
+yt-dlp
 # ===========================================
 # ©️ 2025 Nand Yaduwanshi , aka @NoxxOP
 # 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic

@@ -113,9 +113,11 @@ async def close_menu(_, CallbackQuery):
     try:
         await CallbackQuery.answer()
         await CallbackQuery.message.delete()
-        await CallbackQuery.message.reply_text(
+        close_msg = await CallbackQuery.message.reply_text(
             f"Cʟᴏsᴇᴅ ʙʏ : {CallbackQuery.from_user.mention}"
         )
+        await asyncio.sleep(2)
+        await close_msg.delete()
     except:
         pass
 
@@ -154,4 +156,4 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
 # ===========================================
 
 
-# ❤️ Love From ShrutiBots 
+# ❤️ Love From ShrutiBots

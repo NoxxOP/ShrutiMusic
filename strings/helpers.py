@@ -245,9 +245,9 @@ HELP_21 = """
 # 🎯 TEXT TO SPEECH COMMANDS
 HELP_22 = """ 🔊 <b>TEXT TO SPEECH</b> 🎤
 
-• /tts &lt;text&gt;: Converts the given text to speech in Hindi 🇮🇳
+• /tts &lt;text&gt;: Converts the given text to speech in myanmar 🇲🇲
 <b>Example:</b>
-• /tts Radhe Radhe 🙏
+• /tts မဂ်လာပါ 🙏
 
 <b>Note:</b> Make sure to provide some text after the /tts command ✨ """
 
@@ -352,8 +352,9 @@ HELP_34 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
 
 <b>Note:</b> Only one tagging session can run per chat at a time 📌 """
 
-HELP_35 = """ <b>User Welcome Message</b>
-• /welcome on/off: Enable or Disable welcome message . """
+HELP_35 = """ <b>Welcome Message</b>
+• /welcome on/off: Enable or Disable welcome message .
+• /awelcome on/off: Enable or Disable Assistant welcome message ."""
 
 HELP_36 = """ 💑 <b>COUPLE OF THE DAY</b> 💖
 
@@ -370,10 +371,57 @@ HELP_37 = """🤖 <b>ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇsᴇ ʙᴏᴛs</b> �
 
 🔹 <b>ᴛʜɪs ғᴜɴᴄᴛɪᴏɴ ɪs sᴜᴘᴘᴏʀᴛᴇᴅ ɪɴ:</b>  
 
-• @ShrutixMusicbot – <b>Sʜʀᴜᴛɪ Mᴜsɪᴄ Bᴏᴛ</b>  
-• @M4_Music_BoT – <b>M4 Mᴜsɪᴄ Bᴏᴛ</b>  
+• @SHWEMM_Music2bot – <b>ShweMM music bot</b>  
+• @SHWEMM_MUSIC2bot – <b>SHWEMM Mᴜsɪᴄ Bᴏᴛ</b>  
 
 ✨ <b>ᴜsᴇ ᴛʜᴇsᴇ ʙᴏᴛs ᴛᴏ ᴇɴᴊᴏʏ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ғᴜʟʟʏ.</b>"""
+
+HELP_38 = """💝 <b>LOVE BIRDS TOOLS</b> 🕊️
+
+🎁 <b>Virtual Gifts:</b>  
+• /gifts - <b>ꜱʜᴏᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ɢɪꜰᴛꜱ</b> 🎀  
+• /sendgift @user 🌹 - <b>ꜱᴇɴᴅ ᴀ ɢɪꜰᴛ ᴛᴏ ꜱᴏᴍᴇᴏɴᴇ</b> 💌  
+• /mygifts - <b>ᴠɪᴇᴡ ʏᴏᴜʀ ʀᴇᴄᴇɪᴠᴇᴅ ɢɪꜰᴛꜱ</b> 📥  
+
+💰 <b>Balance & Coins:</b>  
+• /balance (or /bal) - <b>ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏɪɴꜱ, ɢɪꜰᴛꜱ ꜱᴇɴᴛ & ʀᴇᴄᴇɪᴠᴇᴅ</b> 💸  
+• (auto) - <b>ᴇᴀʀɴ ᴄᴏɪɴꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙʏ ᴄʜᴀᴛᴛɪɴɢ & ᴄʟᴀɪᴍɪɴɢ ɢɪꜰᴛꜱ</b> ✨  
+
+📖 <b>Love Stories:</b>  
+• /story Name1 Name2 - <b>ɢᴇɴᴇʀᴀᴛᴇ ᴀ ʀᴀɴᴅᴏᴍ ʀᴏᴍᴀɴᴛɪᴄ ꜱᴛᴏʀʏ</b> 💞  
+
+🏆 <b>Leaderboard:</b>  
+• /top (or /leaderboard) - <b>ꜱʜᴏᴡ ʀɪᴄʜᴇꜱᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴍᴏꜱᴛ ᴄᴏɪɴꜱ</b> 🏅  
+
+💡 <b>Tips:</b>  
+- <b>ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇꜱ ᴛᴏ ᴇᴀʀɴ ᴄᴏɪɴꜱ</b> 📩  
+- <b>ᴄʟᴀɪᴍ ᴘᴇɴᴅɪɴɢ ɢɪꜰᴛꜱ ᴡʜᴇɴ ʏᴏᴜ ᴄʜᴀᴛ</b> 🎁  
+- <b>ꜱᴘʀᴇᴀᴅ ʟᴏᴠᴇ & ᴄʟɪᴍʙ ᴛʜᴇ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ</b> ❤️
+"""
+
+HELP_39 = """🎤 <b>VC LOGGER</b> 📢
+
+🔔 <b>Voice Chat Notifications:</b>  
+- /vclogger - <b>ᴄʜᴇᴄᴋ ᴠᴄ ʟᴏɢɢᴇʀ ꜱᴛᴀᴛᴜꜱ</b> 📊  
+- /vclogger on - <b>ᴇɴᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> ✅  
+- /vclogger off - <b>ᴅɪꜱᴀʙʟᴇ ᴠᴄ ʟᴏɢɢɪɴɢ</b> 🚫  
+
+📝 <b>Alternative Commands:</b>  
+- /vclogger enable - <b>ᴛᴜʀɴ ᴏɴ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔊  
+- /vclogger disable - <b>ᴛᴜʀɴ ᴏꜰꜰ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🔇  
+- /vclogger yes/no - <b>ǫᴜɪᴄᴋ ᴛᴏɢɢʟᴇ</b> ⚡  
+
+✨ <b>Features:</b>  
+- <b>ʀᴇᴀʟ-ᴛɪᴍᴇ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ</b> 🎵  
+- <b>ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ (10 ꜱᴇᴄ)</b> ⏱️  
+- <b>ʀᴀɴᴅᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ ᴍᴇꜱꜱᴀɢᴇꜱ</b> 💬  
+- <b>ᴘᴇʀꜱɪꜱᴛᴇɴᴛ ꜱᴇᴛᴛɪɴɢꜱ (ꜱᴀᴠᴇᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ)</b> 💾  
+
+💡 <b>Tips:</b>  
+- <b>ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴛᴏɢɢʟᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ</b> 👑  
+- <b>ᴋᴇᴇᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʟɪᴠᴇʟʏ & ɪɴꜰᴏʀᴍᴇᴅ</b> 🎉  
+- <b>ᴡᴏʀᴋꜱ ᴡɪᴛʜ ᴀʟʟ ᴘʀᴇꜰɪxᴇꜱ (., !, /, @, ?, ')</b> 🔧
+"""
 
 # ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
 

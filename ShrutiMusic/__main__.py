@@ -33,94 +33,42 @@ from ShrutiMusic.plugins import ALL_MODULES
 from ShrutiMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
-# Bot Commands List
 COMMANDS = [
-    BotCommand("start", "🚀 Start bot"),
-    BotCommand("help", "❓ Help menu"),
-    BotCommand("ping", "📡 Ping and system stats"),
-    BotCommand("play", "🎵 Start streaming the requested track"),
-    BotCommand("vplay", "📹 Start video streaming"),
-    BotCommand("playforce", "⚠️ Force play audio track"),
-    BotCommand("vplayforce", "⚠️ Force play video track"),
-    BotCommand("pause", "⏸ Pause the stream"),
-    BotCommand("resume", "▶️ Resume the stream"),
-    BotCommand("skip", "⏭ Skip the current track"),
-    BotCommand("end", "🛑 End the stream"),
-    BotCommand("stop", "🛑 Stop the stream"),
-    BotCommand("player", "🎛 Get interactive player panel"),
-    BotCommand("queue", "📄 Show track queue"),
-    BotCommand("auth", "➕ Add a user to auth list"),
-    BotCommand("unauth", "➖ Remove a user from auth list"),
-    BotCommand("authusers", "👥 Show list of auth users"),
-    BotCommand("cplay", "📻 Channel audio play"),
-    BotCommand("cvplay", "📺 Channel video play"),
-    BotCommand("cplayforce", "🚨 Channel force audio play"),
-    BotCommand("cvplayforce", "🚨 Channel force video play"),
-    BotCommand("channelplay", "🔗 Connect group to channel"),
-    BotCommand("loop", "🔁 Enable/disable loop"),
-    BotCommand("stats", "📊 Bot stats"),
-    BotCommand("shuffle", "🔀 Shuffle the queue"),
-    BotCommand("seek", "⏩ Seek forward"),
-    BotCommand("seekback", "⏪ Seek backward"),
-    BotCommand("song", "🎶 Download song (mp3/mp4)"),
-    BotCommand("speed", "⏩ Adjust audio playback speed (group)"),
-    BotCommand("cspeed", "⏩ Adjust audio speed (channel)"),
-    BotCommand("tagall", "📢 Tag everyone"),
-    BotCommand("admins", "🛡 Tag all admins"),
-    BotCommand("tgm", "🖼 Convert image to URL"),
-    BotCommand("vid", "🎞 Download video from social media"),
-    BotCommand("dice", "🎲 Roll a dice"),
-    BotCommand("ludo", "🎲 Play ludo"),
-    BotCommand("dart", "🎯 Throw a dart"),
-    BotCommand("basket", "🏀 Play basketball"),
-    BotCommand("football", "⚽ Play football"),
-    BotCommand("slot", "🎰 Play slot"),
-    BotCommand("jackpot", "🎰 Play jackpot"),
-    BotCommand("bowling", "🎳 Play bowling"),
-    BotCommand("ban", "🚫 Ban a user"),
-    BotCommand("banall", "⚠️ Ban all users"),
-    BotCommand("sban", "🧹 Delete & ban user"),
-    BotCommand("tban", "⏳ Temporary ban"),
-    BotCommand("unban", "✅ Unban a user"),
-    BotCommand("warn", "⚠️ Warn a user"),
-    BotCommand("swarn", "🧹 Delete & warn user"),
-    BotCommand("rmwarns", "🗑 Remove all warnings"),
-    BotCommand("warns", "📋 Show user warnings"),
-    BotCommand("kick", "👢 Kick user"),
-    BotCommand("skick", "🧹 Delete msg & kick"),
-    BotCommand("purge", "🧽 Purge messages"),
-    BotCommand("del", "❌ Delete message"),
-    BotCommand("promote", "⬆️ Promote member"),
-    BotCommand("fullpromote", "🚀 Full promote"),
-    BotCommand("demote", "⬇️ Demote member"),
-    BotCommand("pin", "📌 Pin message"),
-    BotCommand("unpin", "❎ Unpin message"),
-    BotCommand("unpinall", "🧹 Unpin all"),
-    BotCommand("mute", "🔇 Mute user"),
-    BotCommand("tmute", "⏱ Temp mute"),
-    BotCommand("unmute", "🔊 Unmute"),
-    BotCommand("zombies", "💀 Ban deleted accounts"),
-    BotCommand("report", "🚨 Report to admins"),
-    BotCommand("markdownhelp", "📖 Help about Markdown"),
-    BotCommand("tts", "🗣 Convert text to speech"),
-    BotCommand("givelink", "🔗 Get invite link for current chat"),
-    BotCommand("link", "🔗 Get invite link for specified group"),
-    BotCommand("fsub", "🔒 Set/disable force subscription"),
-    BotCommand("info", "ℹ️ Get detailed user information"),
-    BotCommand("userinfo", "ℹ️ Get user information (alias)"),
-    BotCommand("downloadrepo", "📥 Download GitHub repository"),
-    BotCommand("truth", "🤔 Get random truth question"),
-    BotCommand("dare", "💪 Get random dare challenge"),
-    BotCommand("mongochk", "🗃 Check MongoDB URL validity"),
-    BotCommand("font", "🎨 Convert text to beautiful fonts"),
-    BotCommand("gali", "😤 Send random gali"),
-    BotCommand("bots", "🤖 Get list of bots in group")
+    BotCommand("start", "❖ sᴛᴀʀᴛ ʙᴏᴛ • ᴛᴏ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ"),
+    BotCommand("help", "❖ ʜᴇʟᴘ ᴍᴇɴᴜ • ɢᴇᴛ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ"),
+    BotCommand("ping", "❖ ᴘɪɴɢ ʙᴏᴛ • ᴄʜᴇᴄᴋ ᴘɪɴɢ ᴀɴᴅ sʏsᴛᴇᴍ sᴛᴀᴛs"),
+    BotCommand("play", "❖ ᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴏɴ ᴠᴄ • ᴛᴏ ᴘʟᴀʏ ᴀɴʏ ᴀᴜᴅɪᴏ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ"),
+    BotCommand("vplay", "❖ ᴘʟᴀʏ ᴠɪᴅᴇᴏ ᴏɴ ᴠᴄ • ᴛᴏ sᴛʀᴇᴀᴍ ᴀɴʏ ᴠɪᴅᴇᴏ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ"),
+    BotCommand("playrtmps", "❖ ᴘʟᴀʏ ʟɪᴠᴇ ᴠɪᴅᴇᴏ • sᴛʀᴇᴀᴍ ʟɪᴠᴇ ᴠɪᴅᴇᴏ ᴄᴏɴᴛᴇɴᴛ"),
+    BotCommand("playforce", "❖ ғᴏʀᴄᴇ ᴘʟᴀʏ ᴀᴜᴅɪᴏ • ғᴏʀᴄᴇ ᴘʟᴀʏ ᴀɴʏ ᴀᴜᴅɪᴏ ᴛʀᴀᴄᴋ"),
+    BotCommand("vplayforce", "❖ ғᴏʀᴄᴇ ᴘʟᴀʏ ᴠɪᴅᴇᴏ • ғᴏʀᴄᴇ ᴘʟᴀʏ ᴀɴʏ ᴠɪᴅᴇᴏ ᴛʀᴀᴄᴋ"),
+    BotCommand("pause", "❖ ᴘᴀᴜsᴇ sᴛʀᴇᴀᴍ • ᴘᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴛʀᴇᴀᴍ"),
+    BotCommand("resume", "❖ ʀᴇsᴜᴍᴇ sᴛʀᴇᴀᴍ • ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ"),
+    BotCommand("skip", "❖ sᴋɪᴘ ᴛʀᴀᴄᴋ • sᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴛʀᴀᴄᴋ"),
+    BotCommand("end", "❖ ᴇɴᴅ sᴛʀᴇᴀᴍ • sᴛᴏᴘ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ"),
+    BotCommand("stop", "❖ sᴛᴏᴘ sᴛʀᴇᴀᴍ • sᴛᴏᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴛʀᴇᴀᴍ"),
+    BotCommand("queue", "❖ sʜᴏᴡ ǫᴜᴇᴜᴇ • ᴅɪsᴘʟᴀʏ ᴛʀᴀᴄᴋ ǫᴜᴇᴜᴇ ʟɪsᴛ"),
+    BotCommand("auth", "❖ ᴀᴅᴅ ᴀᴜᴛʜ ᴜsᴇʀ • ᴀᴅᴅ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ʟɪsᴛ"),
+    BotCommand("unauth", "❖ ʀᴇᴍᴏᴠᴇ ᴀᴜᴛʜ • ʀᴇᴍᴏᴠᴇ ᴜsᴇʀ ғʀᴏᴍ ᴀᴜᴛʜ ʟɪsᴛ"),
+    BotCommand("authusers", "❖ ᴀᴜᴛʜ ʟɪsᴛ • sʜᴏᴡ ᴀʟʟ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs"),
+    BotCommand("cplay", "❖ ᴄʜᴀɴɴᴇʟ ᴀᴜᴅɪᴏ • ᴘʟᴀʏ ᴀᴜᴅɪᴏ ɪɴ ᴄʜᴀɴɴᴇʟ"),
+    BotCommand("cvplay", "❖ ᴄʜᴀɴɴᴇʟ ᴠɪᴅᴇᴏ • ᴘʟᴀʏ ᴠɪᴅᴇᴏ ɪɴ ᴄʜᴀɴɴᴇʟ"),
+    BotCommand("cplayforce", "❖ ᴄʜᴀɴɴᴇʟ ғᴏʀᴄᴇ ᴀᴜᴅɪᴏ • ғᴏʀᴄᴇ ᴘʟᴀʏ ɪɴ ᴄʜᴀɴɴᴇʟ"),
+    BotCommand("cvplayforce", "❖ ᴄʜᴀɴɴᴇʟ ғᴏʀᴄᴇ ᴠɪᴅᴇᴏ • ғᴏʀᴄᴇ ᴠɪᴅᴇᴏ ɪɴ ᴄʜᴀɴɴᴇʟ"),
+    BotCommand("channelplay", "❖ ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ • ʟɪɴᴋ ɢʀᴏᴜᴘ ᴛᴏ ᴄʜᴀɴɴᴇʟ"),
+    BotCommand("loop", "❖ ʟᴏᴏᴘ ᴍᴏᴅᴇ • ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ʟᴏᴏᴘ"),
+    BotCommand("stats", "❖ ʙᴏᴛ sᴛᴀᴛs • sʜᴏᴡ ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs"),
+    BotCommand("shuffle", "❖ sʜᴜғғʟᴇ ǫᴜᴇᴜᴇ • ʀᴀɴᴅᴏᴍɪᴢᴇ ᴛʀᴀᴄᴋ ᴏʀᴅᴇʀ"),
+    BotCommand("seek", "❖ sᴇᴇᴋ ғᴏʀᴡᴀʀᴅ • sᴋɪᴘ ᴛᴏ sᴘᴇᴄɪғɪᴄ ᴛɪᴍᴇ"),
+    BotCommand("seekback", "❖ sᴇᴇᴋ ʙᴀᴄᴋᴡᴀʀᴅ • ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴘʀᴇᴠɪᴏᴜs ᴛɪᴍᴇ"),
+    BotCommand("song", "❖ ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ • ɢᴇᴛ ᴍᴘ3 ᴏʀ ᴍᴘ4 ғɪʟᴇ"),
+    BotCommand("speed", "❖ ᴀᴅᴊᴜsᴛ sᴘᴇᴇᴅ • ᴄʜᴀɴɢᴇ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ ɪɴ ɢʀᴏᴜᴘ"),
+    BotCommand("cspeed", "❖ ᴄʜᴀɴɴᴇʟ sᴘᴇᴇᴅ • ᴀᴅᴊᴜsᴛ sᴘᴇᴇᴅ ɪɴ ᴄʜᴀɴɴᴇʟ"),
+    BotCommand("tagall", "❖ ᴛᴀɢ ᴀʟʟ • ᴍᴇɴᴛɪᴏɴ ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ɢʀᴏᴜᴘ"),
 ]
 
 async def setup_bot_commands():
-    """Setup bot commands during startup"""
     try:
-        # Set bot commands
         await app.set_bot_commands(COMMANDS)
         LOGGER("ShrutiMusic").info("Bot commands set successfully!")
         
@@ -152,7 +100,6 @@ async def init():
 
     await app.start()
     
-    # Setup bot commands during startup
     await setup_bot_commands()
 
     for all_module in ALL_MODULES:
@@ -198,4 +145,4 @@ if __name__ == "__main__":
 # ===========================================
 
 
-# ❤️ Love From ShrutiBots 
+# ❤️ Love From ShrutiBots

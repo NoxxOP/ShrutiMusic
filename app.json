@@ -37,11 +37,6 @@
       "value": "7574330905",
       "required": true
     },
-    "OWNER_USERNAME": {
-      "description": "The username of the owner (without @)",
-      "value": "WTF_WhyMeeh",
-      "required": true
-    },
     "BOT_USERNAME": {
       "description": "The username of your bot (without @)",
       "value": "ShrutixMusicBot",
@@ -74,47 +69,42 @@
     },
     "LOG_GROUP_ID": {
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-      "value": "-1002321189618",
+      "value": "",
       "required": true
     },
     "SUPPORT_GROUP": {
-      "description": "Your support group username (without @)",
+      "description": "Your support group link",
       "value": "https://t.me/ShrutiBotsupport",
       "required": false
     },
     "SUPPORT_CHANNEL": {
-      "description": "Your support channel username (without @)",
+      "description": "Your support channel link",
       "value": "https://t.me/ShrutiBots",
       "required": false
     },
     "INSTAGRAM": {
-      "description": "Your Instagram profile link",
+      "description": "Your Instagram profile link or Any Link",
       "value": "https://instagram.com/yaduwanshi_nand",
       "required": false
     },
     "YOUTUBE": {
-      "description": "Your YouTube channel link",
+      "description": "Your YouTube channel link or Any Link",
       "value": "https://youtube.com/@NandEditz",
       "required": false
     },
     "GITHUB": {
-      "description": "Your GitHub profile link",
+      "description": "Your GitHub profile link or Any Link",
       "value": "https://github.com/NoxxOP",
       "required": false
     },
     "DONATE": {
-      "description": "Link where people can support/donate",
-      "value": "https://t.me/ShrutiBots/91",
-      "required": false
-    },
-    "COOKIE_URL": {
-      "description": "An additional API key for your bot (if needed)",
-      "value": "Need , IF You Didn't add Cookies file in cookies folder",
+      "description": "Link where people can support/donate or Any Link",
+      "value": "http://bit.ly/3NITa3G",
       "required": false
     },
     "START_IMG_URL": {
       "description": "Image that appears with the /start command",
-      "value": "",
+      "value": "https://graph.org/file/e054e63251ef2dc5729dd-6f719a9ecc59862631.png",
       "required": false
     }
   },

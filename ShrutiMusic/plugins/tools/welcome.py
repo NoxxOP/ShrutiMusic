@@ -11,11 +11,9 @@ from ShrutiMusic import app
 from ShrutiMusic.utils.database import *
 from ShrutiMusic.utils.database import db
 
-# Welcome collection
 try:
     wlcm = db.welcome
 except:
-    # Alternative database import
     from ShrutiMusic.utils.database import welcome as wlcm
 
 LOGGER = getLogger(__name__)
@@ -55,10 +53,9 @@ def welcomepic(pic, user, chat, id, uname):
     background.save(f"downloads/welcome#{id}.png")
     return f"downloads/welcome#{id}.png"
 
-# ✅ `/welcome` Command: Enable/Disable Special Welcome
 @app.on_message(filters.command("welcome") & ~filters.private)
 async def auto_state(_, message):
-    usage = "**❖ ᴜsᴀɢᴇ ➥** /welcome [on|off]"
+    usage = "<b>❖ ᴜsᴀɢᴇ ➥</b> /welcome [on|off]"
     if len(message.command) == 1:
         return await message.reply_text(usage)
 
@@ -86,15 +83,13 @@ async def auto_state(_, message):
     else:
         await message.reply("✦ Only Admins Can Use This Command")
 
-# ✅ Special Welcome Message (By Default ON)
 @app.on_chat_member_updated(filters.group, group=-3)
 async def greet_group(_, member: ChatMemberUpdated):
     chat_id = member.chat.id
     A = await wlcm.find_one({"chat_id": chat_id})
 
-    # ✅ Default ON: Lekin agar disable kiya gaya hai to OFF rahe
     if A and A.get("disabled", False):  
-        return  # Agar OFF hai, to kuch mat karo
+        return
 
     if (
         not member.new_chat_member
@@ -124,27 +119,13 @@ async def greet_group(_, member: ChatMemberUpdated):
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,
             photo=welcomeimg,
-            caption=f"""
-🌸✨ ──────────────────── ✨🌸
+            caption=f"""🌟 <b>ᴡᴇʟᴄᴏᴍᴇ {user.mention}!</b>
 
-         🎊 <b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ғᴀᴍɪʟʏ</b> 🎊
+📋 <b>ɢʀᴏᴜᴘ:</b> {member.chat.title}
+🆔 <b>ʏᴏᴜʀ ɪᴅ:</b> <code>{user.id}</code>
+👤 <b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
 
-🌹 <b>ɴᴀᴍᴇ</b> ➤ {user.mention}
-🌺 <b>ᴜsᴇʀɴᴀᴍᴇ</b> ➤ @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
-🆔 <b>ᴜsᴇʀ ɪᴅ</b> ➤ <code>{user.id}</code>
-🏠 <b>ɢʀᴏᴜᴘ</b> ➤ {member.chat.title}
-
-═════════════════════════
-
-💕 <b>ᴡᴇ'ʀᴇ sᴏ ʜᴀᴘᴘʏ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ʜᴇʀᴇ!</b> 
-🎵 <b>ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ ᴇxᴘᴇʀɪᴇɴᴄᴇ</b> 🎵
-
-✨ <b>ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sʜᴀʀᴇ ᴀɴᴅ ᴇɴᴊᴏʏ!</b> ✨
-
-<blockquote><b>💝 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➤ <a href="https://t.me/{app.username}?start=help">Mᴜsɪᴄ ʙᴏᴛs🎶💖</a></b></blockquote>
-
-🌸✨ ──────────────────── ✨🌸
-""",
+<b><u>ʜᴏᴘᴇ ʏᴏᴜ ғɪɴᴅ ɢᴏᴏᴅ ᴠɪʙᴇs, ɴᴇᴡ ғʀɪᴇɴᴅs, ᴀɴᴅ ʟᴏᴛs ᴏғ ғᴜɴ ʜᴇʀᴇ!</u> 🌟</b>""",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🎵 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🎵", url=f"https://t.me/{app.username}?startgroup=True")]
             ]),
@@ -158,15 +139,3 @@ async def greet_group(_, member: ChatMemberUpdated):
         os.remove(f"downloads/pp{user.id}.png")
     except Exception:
         pass
-
-
-# ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
-
-# ===========================================
-# ©️ 2025 Nand Yaduwanshi (aka @NoxxOP)
-# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
-# 📢 Telegram Channel : https://t.me/ShrutiBots
-# ===========================================
-
-
-# ❤️ Love From ShrutiBots 

@@ -1,133 +1,102 @@
-# 🎵 Shruti Music Bot 🎵
-
 <p align="center">
   <img src="ShrutiMusic/assets/equalizer.svg" width="100%" height="500">
 </p>
 
 <div align="center">
-  <h1>🎵 Shruti Music Bot 🎵</h1>
-  
-  <p><b>A Powerful Telegram Music Bot to Play Songs in Voice Chats</b></p>
-  
-  <!-- Bold and vibrant badges with striking combinations -->
-  <p>
-    <a href="https://t.me/ShrutiBots">
-      <img src="https://img.shields.io/badge/Support%20Channel-FF0000?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" alt="Support Channel">
-    </a>
-    <a href="https://t.me/ShrutiBotSupport">
-      <img src="https://img.shields.io/badge/Support%20Group-00FF00?style=for-the-badge&logo=telegram&logoColor=black&labelColor=FF0000" alt="Support Group">
-    </a>
-    <a href="https://t.me/WTF_WhyMeeh">
-      <img src="https://img.shields.io/badge/Owner-FFFF00?style=for-the-badge&logo=telegram&logoColor=black&labelColor=8A2BE2" alt="Owner">
-    </a>
-  </p>
-  
-  <!-- Bold social stats with high contrast -->
-  <p>
-    <a href="https://github.com/NoxxOP/ShrutiMusic/fork">
-      <img src="https://img.shields.io/github/forks/NoxxOP/ShrutiMusic?style=social&logo=github&labelColor=FF1493&color=00CED1" alt="GitHub Forks">
-    </a>
-    <a href="https://github.com/NoxxOP/ShrutiMusic/stargazers">
-      <img src="https://img.shields.io/github/stars/NoxxOP/ShrutiMusic?style=social&logo=github&labelColor=FF4500&color=32CD32" alt="GitHub Stars">
-    </a>
-    <a href="https://github.com/NoxxOP/ShrutiMusic/graphs/contributors">
-      <img src="https://img.shields.io/github/contributors/NoxxOP/ShrutiMusic?style=social&logo=github&labelColor=DC143C&color=FFD700" alt="GitHub Contributors">
-    </a>
-  </p>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=34&duration=4500&pause=1000&color=00D9FF&center=true&vCenter=true&width=1600&lines=𝐒𝐡𝐫𝐮𝐭𝐢+𝐌𝐮𝐬𝐢𝐜+𝐑𝐞𝐩𝐨+—+𝐋𝐢𝐠𝐡𝐭𝐭𝐧𝐢𝐧𝐠+𝐅𝐚𝐬𝐭+𝐌𝐮𝐬𝐢𝐜+𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠+—+𝐍𝐨𝐰+𝐑𝐮𝐧𝐧𝐢𝐧𝐠+𝐨𝐧+𝐀𝐏𝐈!">
 </div>
 
 ---
-
-## 🚀 Quick Deploy Options
-
-<div align="center">
-  
-  ### 🔥 Deploy to Heroku
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic">
-    <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-FF0080?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000080" width="280px" alt="Deploy to Heroku">
-  </a>
-  
-  ### ☁️ Deploy to Render (Free)
-  <a href="https://render.com/deploy?repo=https://github.com/NoxxOP/ShrutiMusic">
-    <img src="https://img.shields.io/badge/Deploy%20To%20Render-00FF80?style=for-the-badge&logo=render&logoColor=black&labelColor=800080" width="280px" alt="Deploy to Render">
-  </a>
-  
-  ### 🎵 Simple Music Bot
-  <a href="https://github.com/NoxxOP/ShrutixMusic">
-    <img src="https://img.shields.io/badge/Simple%20Music%20Bot-FF4000?style=for-the-badge&logo=github&logoColor=white&labelColor=008000" width="280px" alt="Simple Music Bot">
-  </a>
-  
-</div>
-
----
-
-## ✨ Features
 
 <div align="center">
 
-| 🎵 **Play Music** | 🔗 **Multiple Sources** | 📋 **Playlists** | 🌐 **Multi-Language** |
-|:-----------------:|:------------------------:|:-----------------:|:----------------------:|
-| Stream high-quality music in Telegram voice chats | YouTube, Spotify, SoundCloud, and local files | Create and manage playlists for your group | Available in multiple languages |
+## ⚡ 𝐍𝐨𝐰 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 𝐨𝐧 𝐀𝐏𝐈 - 𝟏𝟎𝐱 𝐅𝐚𝐬𝐭𝐞𝐫! ⚡
 
-| 🎨 **Elegant UI** | 👑 **Group Management** | 🔊 **High Quality** | ⚡ **Fast & Reliable** |
-|:-----------------:|:------------------------:|:--------------------:|:----------------------:|
-| Clean and modern user interface | Powerful admin commands | Crystal clear audio streaming | Lightning fast response time |
+> **𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐓𝐢𝐦𝐞:** `1-3 seconds` | **𝐒𝐭𝐚𝐛𝐢𝐥𝐢𝐭𝐲:** `99.9% Uptime`
+
+[![Support Channel](https://img.shields.io/badge/Support%20Channel-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiBots)
+[![Support Group](https://img.shields.io/badge/Support%20Group-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiBotSupport)
+[![Owner](https://img.shields.io/badge/Owner-black?style=for-the-badge&logo=telegram)](https://t.me/WTF_WhyMeeh)
+
+[![Forks](https://img.shields.io/github/forks/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/NoxxOP/ShrutiMusic/fork)
+[![Stars](https://img.shields.io/github/stars/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/NoxxOP/ShrutiMusic/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)](https://github.com/NoxxOP/ShrutiMusic/graphs/contributors)
 
 </div>
 
 ---
 
-## 📊 Repository Stats
-
-<div align="center">
-  <img src="https://img.shields.io/github/repo-size/NoxxOP/ShrutiMusic?style=flat-square&logo=github&color=FF1493&labelColor=000080" alt="Repo Size">
-  <img src="https://img.shields.io/github/issues/NoxxOP/ShrutiMusic?style=flat-square&logo=github&color=FF4500&labelColor=008B8B" alt="Issues">
-  <img src="https://img.shields.io/github/forks/NoxxOP/ShrutiMusic?style=flat-square&logo=github&color=32CD32&labelColor=8B0000" alt="Forks">
-  <img src="https://img.shields.io/github/stars/NoxxOP/ShrutiMusic?style=flat-square&logo=github&color=FFD700&labelColor=4B0082" alt="Stars">
-  <img src="https://img.shields.io/github/license/NoxxOP/ShrutiMusic?style=flat-square&logo=github&color=00CED1&labelColor=DC143C" alt="LICENSE">
-  <img src="https://img.shields.io/github/last-commit/NoxxOP/ShrutiMusic?style=flat-square&logo=github&color=FF6347&labelColor=2F4F4F" alt="Last Commit">
-</div>
-
----
-
-## 🔥 Essential Commands
+## 🚀 𝐐𝐮𝐢𝐜𝐤 𝐃𝐞𝐩𝐥𝐨𝐲
 
 <div align="center">
 
-| Command | Description | Usage |
-|---------|-------------|-------|
-| `/play` | 🎵 Play song from YouTube | `/play [song name/URL]` |
-| `/pause` | ⏸️ Pause the current stream | `/pause` |
-| `/resume` | ▶️ Resume the paused stream | `/resume` |
-| `/skip` | ⏭️ Skip to the next song | `/skip` |
-| `/stop` | ⏹️ Stop the streaming | `/stop` |
-| `/playlist` | 📋 Show the playlist | `/playlist` |
-| `/song` | 📥 Download a song as audio | `/song [song name]` |
-| `/settings` | ⚙️ Open bot settings | `/settings` |
+| **𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦** | **𝐃𝐞𝐩𝐥𝐨𝐲 𝐍𝐨𝐰** | **𝐈𝐧𝐟𝐨** |
+|:---:|:---:|:---:|
+| **𝐇𝐞𝐫𝐨𝐤𝐮** | [![Deploy](https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic) | 𝐎𝐧𝐞-𝐂𝐥𝐢𝐜𝐤 𝐃𝐞𝐩𝐥𝐨𝐲 |
+| **𝐑𝐞𝐧𝐝𝐞𝐫** | [![Deploy](https://img.shields.io/badge/Deploy%20On%20Render-black?style=for-the-badge&logo=render)](https://render.com/deploy?repo=https://github.com/NoxxOP/ShrutiMusic) | 𝟏𝟎𝟎% 𝐅𝐫𝐞𝐞 |
+| **𝐒𝐢𝐦𝐩𝐥𝐞 𝐁𝐨𝐭** | [![View](https://img.shields.io/badge/Simple%20Bot-black?style=for-the-badge&logo=github)](https://github.com/NoxxOP/ShrutixMusic) | 𝐋𝐢𝐠𝐡𝐭𝐰𝐞𝐢𝐠𝐡𝐭 |
 
 </div>
 
 ---
 
-## 🚀 Deployment Guide
+## ✨ 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 
-### 🔧 VPS Deployment (Step by Step)
+<div align="center">
 
-#### Prerequisites
+| 🎵 𝐇𝐢𝐠𝐡 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 | 🔗 𝐌𝐮𝐥𝐭𝐢𝐩𝐥𝐞 𝐒𝐨𝐮𝐫𝐜𝐞𝐬 | 📋 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭𝐬 | 🌐 𝐌𝐮𝐥𝐭𝐢-𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 |
+|:---:|:---:|:---:|:---:|
+| Crystal clear audio | YouTube • Spotify | Create & Manage | Multiple Languages |
+| **🎨 𝐄𝐥𝐞𝐠𝐚𝐧𝐭 𝐔𝐈** | **👑 𝐀𝐝𝐦𝐢𝐧 𝐂𝐨𝐧𝐭𝐫𝐨𝐥𝐬** | **⚡ 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠 𝐅𝐚𝐬𝐭** | **🔊 𝐒𝐭𝐚𝐛𝐥𝐞** |
+| Modern Interface | Powerful Commands | 1-3s Response | 99.9% Uptime |
 
-First, update your system and install required packages:
+</div>
+
+---
+
+## 🎯 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬
+
+<div align="center">
+
+| 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 | 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 |
+|:---:|:---:|
+| `/play [song]` | 🎵 𝐏𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜 |
+| `/pause` | ⏸️ 𝐏𝐚𝐮𝐬𝐞 𝐩𝐥𝐚𝐲𝐛𝐚𝐜𝐤 |
+| `/resume` | ▶️ 𝐑𝐞𝐬𝐮𝐦𝐞 𝐩𝐥𝐚𝐲𝐛𝐚𝐜𝐤 |
+| `/skip` | ⏭️ 𝐒𝐤𝐢𝐩 𝐭𝐫𝐚𝐜𝐤 |
+| `/stop` | ⏹️ 𝐒𝐭𝐨𝐩 𝐩𝐥𝐚𝐲𝐛𝐚𝐜𝐤 |
+| `/playlist` | 📋 𝐕𝐢𝐞𝐰 𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 |
+| `/song [name]` | 📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚𝐮𝐝𝐢𝐨 |
+| `/settings` | ⚙️ 𝐁𝐨𝐭 𝐬𝐞𝐭𝐭𝐢𝐧𝐠𝐬 |
+
+</div>
+
+---
+
+## 🚀 𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭 𝐆𝐮𝐢𝐝𝐞
+
+<details>
+<summary><b>📦 𝐕𝐏𝐒 𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭 (𝐂𝐥𝐢𝐜𝐤 𝐭𝐨 𝐄𝐱𝐩𝐚𝐧𝐝)</b></summary>
+
+<br>
+
+### **𝐒𝐭𝐞𝐩 𝟏: 𝐔𝐩𝐝𝐚𝐭𝐞 𝐒𝐲𝐬𝐭𝐞𝐦**
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-Install Python, Pip, FFmpeg, Git, Screen, Node.js, npm
+---
+
+### **𝐒𝐭𝐞𝐩 𝟐: 𝐈𝐧𝐬𝐭𝐚𝐥𝐥 𝐑𝐞𝐪𝐮𝐢𝐫𝐞𝐝 𝐏𝐚𝐜𝐤𝐚𝐠𝐞𝐬**
 
 ```bash
 sudo apt-get install python3 python3-pip ffmpeg git screen curl -y
 ```
 
-Install Node.js (LTS Version) and npm
+---
+
+### **𝐒𝐭𝐞𝐩 𝟑: 𝐈𝐧𝐬𝐭𝐚𝐥𝐥 𝐍𝐨𝐝𝐞.𝐣𝐬**
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
@@ -137,7 +106,9 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-#### Clone the Repository
+---
+
+### **𝐒𝐭𝐞𝐩 𝟒: 𝐂𝐥𝐨𝐧𝐞 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲**
 
 ```bash
 git clone https://github.com/NoxxOP/ShrutiMusic
@@ -147,13 +118,35 @@ git clone https://github.com/NoxxOP/ShrutiMusic
 cd ShrutiMusic
 ```
 
-#### Run 24x7 bot using screen
+---
+
+### **𝐒𝐭𝐞𝐩 𝟓: 𝐂𝐫𝐞𝐚𝐭𝐞 𝐒𝐜𝐫𝐞𝐞𝐧 𝐒𝐞𝐬𝐬𝐢𝐨𝐧**
 
 ```bash
 screen
 ```
 
-#### Setup Virtual Environment
+**𝐍𝐨𝐭𝐞:** Press `Ctrl+A` then `D` to detach screen
+
+**𝐓𝐨 𝐑𝐞𝐚𝐭𝐭𝐚𝐜𝐡:**
+```bash
+screen -ls
+```
+```bash
+screen -r {screen_id}
+```
+
+---
+
+### **𝐒𝐭𝐞𝐩 𝟔: 𝐈𝐧𝐬𝐭𝐚𝐥𝐥 𝐕𝐢𝐫𝐭𝐮𝐚𝐥 𝐄𝐧𝐯𝐢𝐫𝐨𝐧𝐦𝐞𝐧𝐭 𝐏𝐚𝐜𝐤𝐚𝐠𝐞**
+
+```bash
+sudo apt-get install python3-venv -y
+```
+
+---
+
+### **𝐒𝐭𝐞𝐩 𝟕: 𝐂𝐫𝐞𝐚𝐭𝐞 𝐕𝐢𝐫𝐭𝐮𝐚𝐥 𝐄𝐧𝐯𝐢𝐫𝐨𝐧𝐦𝐞𝐧𝐭**
 
 ```bash
 python3 -m venv venv
@@ -163,7 +156,9 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-#### Install Dependencies
+---
+
+### **𝐒𝐭𝐞𝐩 𝟖: 𝐈𝐧𝐬𝐭𝐚𝐥𝐥 𝐏𝐲𝐭𝐡𝐨𝐧 𝐃𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐢𝐞𝐬**
 
 ```bash
 pip3 install -U pip
@@ -173,152 +168,167 @@ pip3 install -U pip
 pip3 install -U -r requirements.txt
 ```
 
-#### Configuration
+---
 
-Copy example config file and edit it with your values:
+### **𝐒𝐭𝐞𝐩 𝟗: 𝐂𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐚𝐭𝐢𝐨𝐧**
 
 ```bash
 nano .env
 ```
 
-**Fill in your:**
+**𝐅𝐢𝐥𝐥 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐯𝐚𝐫𝐢𝐚𝐛𝐥𝐞𝐬:**
 
-- `API_ID` & `API_HASH` from my.telegram.org
-- `BOT_TOKEN` from @BotFather  
-- `MONGO_DB_URI` from your MongoDB Atlas cluster
-- `OWNER_ID` (Your Telegram user ID)
-- `OWNER_USERNAME` (Your Telegram username without @)
-- `BOT_USERNAME` (Your bot's username without @)
-- `UPSTREAM_REPO` (GitHub repo URL for updates Recommend : Original Source)
-- `STRING_SESSION` (Generate using @Sessionbbbot)
-- `GIT_TOKEN` (If your repo is private)
-- `LOG_GROUP_ID` (Log group/channel ID starting with -100)
-- `SUPPORT_GROUP` (Full Link of your Support Group)
-- `SUPPORT_CHANNEL` (Full Link Of your Support channel)
-- `COOKIE_URL` (Optional: If no cookies file in Your Repo)
-- `START_IMG_URL` (Image URL for /start message thumbnail)
+- `API_ID` & `API_HASH` - Get from [my.telegram.org](https://my.telegram.org)
+- `BOT_TOKEN` - Get from [@BotFather](https://t.me/BotFather)
+- `MONGO_DB_URI` - MongoDB Atlas connection string
+- `OWNER_ID` - Your Telegram user ID
+- `STRING_SESSION` - Generate using [@Sessionbbbot](https://t.me/Sessionbbbot)
+- `LOG_GROUP_ID` - Log group/channel ID (starting with -100)
+- `SUPPORT_GROUP` - Your support group link
+- `SUPPORT_CHANNEL` - Your support channel link
 
-#### Starting the Bot
+**Save:** `Ctrl+X` then `Y` then `Enter`
 
-There are two ways to start the bot:
+---
 
-**1. Using Python directly:**
+### **𝐒𝐭𝐞𝐩 𝟏𝟎: 𝐒𝐭𝐚𝐫𝐭 𝐁𝐨𝐭**
 
+**𝐌𝐞𝐭𝐡𝐨𝐝 𝟏:**
 ```bash
 python3 -m ShrutiMusic
 ```
 
-**2. Using Bash script:**
-
+**𝐌𝐞𝐭𝐡𝐨𝐝 𝟐:**
 ```bash
 bash start
 ```
 
-To detach the screen, press `Ctrl+A` then `D`
+**𝐃𝐞𝐭𝐚𝐜𝐡 𝐒𝐜𝐫𝐞𝐞𝐧:** `Ctrl+A` then `D`
 
-To reattach the screen later:
-
-```bash
-screen -ls
-```
-
-See Your Screen ID and then:
-
-```bash
-screen -r {screen_id}
-```
-
-Make Sure Fill Your Screen ID without Bracket {} .  
-Example : `screen -r 108108`
+</details>
 
 ---
 
-## ☁️ Heroku Deployment
+<details>
+<summary><b>☁️ 𝐇𝐞𝐫𝐨𝐤𝐮 𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭 (𝐂𝐥𝐢𝐜𝐤 𝐭𝐨 𝐄𝐱𝐩𝐚𝐧𝐝)</b></summary>
 
-<div align="center">
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic">
-    <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-FF0080?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000080" width="250px" alt="Deploy to Heroku">
-  </a>
-</div>
-
-**Steps:**
-
-1. **Click the button above**
-
-2. **Fill in the required details:**
-   - App name
-   - API_ID & API_HASH
-   - BOT_TOKEN
-   - MUSIC_BOT_NAME
-   - SESSION_STRING
-   - SUDO_USERS (your User ID)
-
-3. **Click "Deploy App"**
-
-4. **Once deployed, go to Resources tab and turn on the worker**
-
----
-
-## 🔄 How to Generate Session String
-
-Use our Session Generator Bot: [@Sessionbbbot](https://t.me/Sessionbbbot)
-
-1. **Start the bot**
-2. **Send phone number with country code**
-3. **Enter the OTP**
-4. **Your session string will be generated**
-
----
-
-## 🤔 Common Issues & Fixes
+<br>
 
 <div align="center">
 
-| Issue | Solution |
-|-------|----------|
-| 🤖 **Bot not responding** | Check if the bot is running and has proper permissions |
-| 🔇 **No sound in VC** | Ensure ffmpeg is properly installed |
-| 🚫 **Can't join voice chat** | Make sure the bot is an admin with voice chat permissions |
-| ⚠️ **API Issues** | Double check your API_ID and API_HASH |
+[![Deploy to Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic)
 
 </div>
 
+### **𝐒𝐭𝐞𝐩𝐬:**
+
+1. Click the "Deploy To Heroku" button above
+2. Fill in the required environment variables:
+   - `API_ID` & `API_HASH` from [my.telegram.org](https://my.telegram.org)
+   - `BOT_TOKEN` from [@BotFather](https://t.me/BotFather)
+   - `MONGO_DB_URI` - MongoDB connection string
+   - `STRING_SESSION` from [@Sessionbbbot](https://t.me/Sessionbbbot)
+   - Other required variables
+3. Click "Deploy App"
+4. Go to Resources tab and enable the worker
+
+</details>
+
 ---
 
-## 🌟 Credits and Acknowledgements
+<details>
+<summary><b>🔄 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐒𝐭𝐫𝐢𝐧𝐠 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 (𝐂𝐥𝐢𝐜𝐤 𝐭𝐨 𝐄𝐱𝐩𝐚𝐧𝐝)</b></summary>
+
+<br>
 
 <div align="center">
-  
-**👨‍💻 Main Developer:** [NoxxOP](https://github.com/NoxxOP)
 
-**🙏 Special Thanks:** All contributors who helped make this project better
+[![Session Bot](https://img.shields.io/badge/Session%20Generator-black?style=for-the-badge&logo=telegram)](https://t.me/Sessionbbbot)
+
+</div>
+
+### **𝐒𝐭𝐞𝐩𝐬:**
+
+1. 🤖 Start [@Sessionbbbot](https://t.me/Sessionbbbot)
+2. 📱 Send your phone number with country code
+3. 🔢 Enter the OTP you receive
+4. ✅ Copy your session string
+
+</details>
+
+---
+
+<details>
+<summary><b>🤔 𝐂𝐨𝐦𝐦𝐨𝐧 𝐈𝐬𝐬𝐮𝐞𝐬 (𝐂𝐥𝐢𝐜𝐤 𝐭𝐨 𝐄𝐱𝐩𝐚𝐧𝐝)</b></summary>
+
+<br>
+
+| **𝐈𝐬𝐬𝐮𝐞** | **𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧** |
+|:---:|:---:|
+| Bot not responding | Check if bot is running with proper permissions |
+| No sound in VC | Ensure FFmpeg is properly installed |
+| Can't join voice chat | Make bot admin with VC permissions |
+| API issues | Double check `API_ID` and `API_HASH` |
+| Slow response | Check internet connection and server resources |
+
+</details>
+
+---
+
+## 📊 𝐒𝐭𝐚𝐭𝐬
+
+<div align="center">
+
+![Repo Size](https://img.shields.io/github/repo-size/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
+![License](https://img.shields.io/github/license/NoxxOP/ShrutiMusic?color=black&logo=github&logoColor=black&style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/NoxxOP/ShrutiMusic?color=blue&logo=github&logoColor=green&style=for-the-badge)
 
 </div>
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Support
+## 🌟 𝐂𝐫𝐞𝐝𝐢𝐭𝐬
 
 <div align="center">
 
-**For any questions or help, join our Support Group**
+**𝐌𝐚𝐢𝐧 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
 
-<a href="https://t.me/ShrutiBotSupport">
-  <img src="https://img.shields.io/badge/Join%20Support%20Group-FF0040?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0080FF" alt="Support Group">
-</a>
+[![NoxxOP](https://img.shields.io/badge/NoxxOP-black?style=for-the-badge&logo=github)](https://github.com/NoxxOP)
 
----
+**𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐭𝐨 𝐀𝐥𝐥 𝐂𝐨𝐧𝐭𝐫𝐢𝐛𝐮𝐭𝐨𝐫𝐬**
 
-<img src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-NoxxOP-FF1493?style=for-the-badge&logo=heart&labelColor=000080" alt="Made with love">
+</div>
 
 ---
 
-**🎵 Enjoy Streaming Music with Shruti Bot! 🎵**
+## 📝 𝐋𝐢𝐜𝐞𝐧𝐬𝐞
+
+<div align="center">
+
+[![MIT License](https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+## 💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
+
+<div align="center">
+
+| **𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥** | **𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩** |
+|:---:|:---:|
+| [![Channel](https://img.shields.io/badge/Join%20Channel-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiBots) | [![Group](https://img.shields.io/badge/Join%20Group-black?style=for-the-badge&logo=telegram)](https://t.me/ShrutiBotSupport) |
+| Latest Updates | 24/7 Help & Support |
+
+---
+
+<img src="https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-NoxxOP-orange?style=for-the-badge&logo=heart" alt="Made with love">
+
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Fast+%F0%9F%9A%80+Reliable+%F0%9F%94%92+High+Quality+%F0%9F%8E%B5;10x+Faster+with+API+%E2%9A%A1;Join+Our+Community+%F0%9F%92%AC" alt="Typing SVG">
+</p>
 
 </div>

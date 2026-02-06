@@ -1,35 +1,55 @@
 services:
-  - type: worker
-    name: shrutimusic
-    runtime: python
-    buildCommand: pip install --no-cache-dir -r requirements.txt
-    startCommand: bash start
+  - type: web
+    name: shruti-music
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      pip install -r requirements.txt
+    startCommand: python3 -m ShrutiMusic
+    autoDeploy: true
+
     envVars:
-      - key: API_ID
-        value: "29448785"
-      - key: API_HASH
-        value: "599574f6aff0a09ebb76305b58e7e9c2"
-      - key: BOT_TOKEN
-        value: ""
-      - key: MONGO_DB_URI
-        value: "mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION"
-      - key: OWNER_ID
-        value: "1786683163"
-      - key: OWNER_USERNAME
-        value: ""
-      - key: STRING_SESSION
-        value: ""
-      - key: GIT_TOKEN
-        value: ""
-      - key: HEROKU_API_KEY
-        value: ""
-      - key: HEROKU_APP_NAME
-        value: ""
-      - key: LOG_GROUP_ID
-        value: "-1002321189618"
-      - key: SUPPORT_GROUP
-        value: "https://t.me/ShrutiBotsupport"
-      - key: SUPPORT_CHANNEL
-        value: "https://t.me/ShrutiBots"
-      - key: COOKIE_URL
-        value: "Need , IF You Didn't add Cookies file in cookies folder"
+      API_ID: 
+        value: 29448785
+      API_HASH: 
+        value: 599574f6aff0a09ebb76305b58e7e9c2
+      API_KEY:
+        sync: false
+      BOT_TOKEN:
+        sync: false
+      MONGO_DB_URI: 
+        value: mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION
+      OWNER_ID:
+        value: 7574330905
+      OWNER_USERNAME:
+        value: WTF_WhyMeeh
+      BOT_USERNAME:
+        value: ShrutixMusicBot
+      UPSTREAM_REPO:
+        value: https://github.com/NoxxOP/ShrutiMusic
+      STRING_SESSION:
+        sync: false
+      GIT_TOKEN:
+        sync: false
+      HEROKU_API_KEY:
+        sync: false
+      HEROKU_APP_NAME:
+        sync: false
+      LOG_GROUP_ID:
+        value: -1002321189618
+      SUPPORT_GROUP:
+        value: https://t.me/ShrutiBotsupport
+      SUPPORT_CHANNEL:
+        value: https://t.me/ShrutiBots
+      INSTAGRAM:
+        value: https://instagram.com/yaduwanshi_nand
+      YOUTUBE:
+        value: https://youtube.com/@NandEditz
+      GITHUB:
+        value: https://github.com/NoxxOP
+      DONATE:
+        value: https://t.me/ShrutiBots/91
+      START_IMG_URL:
+        sync: false
