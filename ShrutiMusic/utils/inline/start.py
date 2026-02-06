@@ -58,8 +58,8 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text=_["E_X_1"],
-                callback_data="fork_repo"
+                text="𝓜𝓪𝓲𝓷 𝓑𝓸𝓽",
+                url="https://t.me/SHWEMM_Music2bot?start=start"
             ),
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
         ],
