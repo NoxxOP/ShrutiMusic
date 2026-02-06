@@ -55,8 +55,7 @@ async def userdel(client, message: Message, _):
         if len(message.command) != 2:
             return await message.reply_text(_["general_1"])
     user = await extract_user(message)
-    if user.id in spam_protection_users:
-        return await message.reply_text("❌ This user is not in sudolist.")
+    
     
     if user.id not in SUDOERS:
         return await message.reply_text(_["sudo_3"].format(user.mention))
