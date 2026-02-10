@@ -16,7 +16,7 @@ MONGO_DB_URI = os.getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
-API_KEY = os.getenv("YOUTUBE_API_KEY", None)
+API_KEY = os.getenv("API_KEY", None)
 
 
 UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://t.me/HANTHAR_27")
