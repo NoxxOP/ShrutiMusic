@@ -34,7 +34,7 @@ dbb()
 heroku()
 
 app = Nand()
-userbot = Userbot()
+#userbot = Userbot()
 
 
 from .platforms import *
