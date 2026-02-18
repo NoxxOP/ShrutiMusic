@@ -245,9 +245,9 @@ HELP_21 = """
 # 🎯 TEXT TO SPEECH COMMANDS
 HELP_22 = """ 🔊 <b>TEXT TO SPEECH</b> 🎤
 
-• /tts &lt;text&gt;: Converts the given text to speech in Hindi 🇮🇳
+• /tts &lt;text&gt;: Converts the given text to speech in MYANMAR 🇲🇲
 <b>Example:</b>
-• /tts Radhe Radhe 🙏
+• /tts MIN GA LAR PAR 🙏
 
 <b>Note:</b> Make sure to provide some text after the /tts command ✨ """
 
@@ -371,8 +371,8 @@ HELP_37 = """🤖 <b>ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇsᴇ ʙᴏᴛs</b> �
 
 🔹 <b>ᴛʜɪs ғᴜɴᴄᴛɪᴏɴ ɪs sᴜᴘᴘᴏʀᴛᴇᴅ ɪɴ:</b>  
 
-• @ShrutixMusicbot – <b>Sʜʀᴜᴛɪ Mᴜsɪᴄ Bᴏᴛ</b>  
-• @M4_Music_BoT – <b>M4 Mᴜsɪᴄ Bᴏᴛ</b>  
+• @HANTHAR1999_bot – <b>HANTHAR Mᴜsɪᴄ Bᴏᴛ</b>  
+• @PANDAMUSIC1_BOT – <b>PANDA Mᴜsɪᴄ Bᴏᴛ</b>  
 
 ✨ <b>ᴜsᴇ ᴛʜᴇsᴇ ʙᴏᴛs ᴛᴏ ᴇɴᴊᴏʏ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ғᴜʟʟʏ.</b>"""
 

@@ -25,7 +25,7 @@ def command(commands: Union[str, List[str]]):
 async def on_vc_start(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("<b>😍 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ 🥳</b>")
+        await msg.reply("<b>🤍 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ 🤍\n\n🙄 `ⁱᶠ ᵗʰᵉ ˢᵒⁿᵍ ᵈᵒᵉˢⁿ'ᵗ ᵖˡᵃʸ, ᵖˡᵉᵃˢᵉ ᵃˢᵏ ᶠᵒʳ ʰᵉˡᵖ = @HANTHAR999 { 🇲🇲 }</b>")
         # Remove st_stream call from here - it's causing the error
         await set_loop(chat_id, 0)
     except Exception as e:
@@ -72,7 +72,7 @@ async def start_group_call(c: Client, m: Message):
                 random_id=assistant.rnd_id() // 9000000000,
             )
         )
-        await msg.edit_text("<b>🎧 Voice Chat Started Successfully ⚡️</b>")
+        await msg.edit_text("<b>🎧 Voice Chat Started Successfully 🤍</b>")
         await set_loop(chat_id, 0)
 
     except ChatAdminRequired:
@@ -118,7 +118,7 @@ async def start_group_call(c: Client, m: Message):
                 ),
             )
 
-            await msg.edit_text("<b>🎧 Voice Chat Started Successfully ⚡️</b>")
+            await msg.edit_text("<b>🎧 Voice Chat Started Successfully 🤍</b>")
             await set_loop(chat_id, 0)
             
         except Exception as e:
@@ -147,7 +147,7 @@ async def stop_group_call(c: Client, m: Message):
             return
             
         await assistant.invoke(DiscardGroupCall(call=group_call))
-        await msg.edit_text("<b>🎧 Voice Chat Closed Successfully ⚡️</b>")
+        await msg.edit_text("<b>🎧 Voice Chat Closed Successfully 🤍</b>")
         await set_loop(chat_id, 0)
 
     except Exception as e:
@@ -190,7 +190,7 @@ async def stop_group_call(c: Client, m: Message):
                     ),
                 )
                 
-                await msg.edit_text("<b>🎧 Voice Chat Closed Successfully ⚡️</b>")
+                await msg.edit_text("<b>🎧 Voice Chat Closed Successfully 🤍</b>")
                 await set_loop(chat_id, 0)
                 
             except Exception as ex:
