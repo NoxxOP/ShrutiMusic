@@ -88,8 +88,8 @@ async def fork_repo_callback(client, query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚀 Fᴏʀᴋ Rᴇᴘᴏ", url="https://github.com/NoxxOP/ShrutiMusic/fork"),
-                    InlineKeyboardButton("⚡ Hᴇʀᴏᴋᴜ Dᴇᴘʟᴏʏ", url="https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ShrutiMusic")
+                    InlineKeyboardButton("𝑲𝒏𝒐𝒘𝒍𝒆𝒅𝒈𝒆", url="https://t.me/vip_king1999"),
+                    InlineKeyboardButton("𝑴𝒖𝒔𝒊𝒄  𝑮𝒓𝒐𝒖𝒑�", url="https://t.me/+rQWL_3kN_ZQ5NTE1")
                 ],
                 [
                     InlineKeyboardButton("🔙 Bᴀᴄᴋ", callback_data="settingsback_helper")
