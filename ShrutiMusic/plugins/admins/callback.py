@@ -79,10 +79,10 @@ async def show_help_page1(client, callback_query: CallbackQuery):
 async def fork_repo_callback(client, query):
     await query.message.edit_text(
         text=(
-            "✨ <b>ʙᴜɪʟᴅ Yᴏᴜʀ Oᴡɴ ᴍᴜsɪᴄ ʙᴏᴛ 🎧</b>\n\n"
-            "🚀 ʀᴇᴀᴅʏ ᴛᴏ ʟᴀᴜɴᴄʜ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ?\n"
-            "ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴅᴇᴘʟᴏʏ ɪɴ sᴇᴄᴏɴᴅs.\n\n"
-            "🔧 <b>Cᴜsᴛᴏᴍɪᴢᴇ ɪᴛ. Dᴇᴘʟᴏʏ ɪᴛ. Vɪʙᴇ ᴡɪᴛʜ ɪᴛ 🔥</b>"
+            "✨ <b> မင်းရဲ့ ကိုယ်ပိုင် Music Bot ကို စတင်လိုက်ပါ 🎧</b>\n\n"
+            "​🚀 <b>မင်းရဲ့ Bot ကို လွှင့်တင်ဖို အဆင်သင့်ဖြစ်ပြီလား?\n"
+            "Repository ကို Fork လုပ်ပြီး စက္ကန့်ပိုင်းအတွင်း Deploy လုပ်လိုက်ပါ။\n\n"
+            "🔧 <b> စိတ်ကြိုက်ပြင်ဆင်မယ်၊ Deploy လုပ်မယ်၊ သီချင်းတွေနဲ့ အပန်းဖြေမယ် 🔥</b>"
         ),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
