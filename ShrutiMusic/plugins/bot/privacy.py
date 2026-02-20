@@ -31,7 +31,7 @@ TEXT = f"""
 
 Your privacy is important to us. To learn more about how we collect, use, and protect your data, please review our Privacy Policy here: [Privacy Policy]({config.PRIVACY_LINK}).
 
-If you have any questions or concerns, feel free to reach out to our [support team](https://t.me/ShrutiBotSupport).
+If you have any questions or concerns, feel free to reach out to our [support team](https://t.me/myanmar_music_Bot2027).
 """
 
 @app.on_message(filters.command("privacy"))

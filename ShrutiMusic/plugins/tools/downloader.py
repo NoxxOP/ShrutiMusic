@@ -3316,22 +3316,22 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, InputMediaVideo
 from ShrutiMusic import app
 
-REPO_VIDEO = "https://files.catbox.moe/aoafwn.mp4"
+REPO_VIDEO = "https://files.catbox.moe/9iom66.mp4"
 
 @app.on_message(filters.command(["repo", "source"]))
 async def send_repo(_, message: Message):
     await message.reply_video(
         video=REPO_VIDEO,
         caption=(
-            "<b>✨ ʜᴇʏ ᴅᴇᴀʀ, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ᴏꜰꜰɪᴄɪᴀʟ ʀᴇᴘᴏꜱɪᴛᴏʀʏ �ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ ✨</b>\n\n"
-            "🔗 �ᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ ꜱᴛᴀʀ 🌟 ᴀɴᴅ ꜰᴏʟʟᴏᴡ!\n\n"
-            "🧡 ᴄʀᴇᴅɪᴛꜱ : <a href='https://t.me/ShrutiBots'>@ShrutiBots</a>"
+            "<b>မင်္ဂလာပါခင်ဗျာ၊ ဒါကတော့ ကျွန်တော့်ရဲ့ တရားဝင် Music Bot များဖြစ်ပါတယ်</b>\n\n"
+            "ယခုလို Music Bot များ လုပ်ဆောင်ခြင်းပါက အောက်က ပေးထားသော Tg ACC များတွင် ဆက်သွယ်လိုရပါတယ်\n\n"
+            "🤍  Main Channel 🤍 : <a href='https://t.me/myanmarbot_music'>@myanmarbot_music</a>"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📂 Management Bot", url="http://github.com/NoxxOP/ShrutiMusic"),
-                    InlineKeyboardButton("📂 Music Bot", url="http://github.com/NoxxOP/ShrutixMusic")
+                    InlineKeyboardButton(" Music Bot", url="https://t.me/HANTHAR1999_bot"),
+                    InlineKeyboardButton("𝐶𝑟𝑒𝑎𝑡𝑒 𝐵𝑜𝑡", url="https://t.me/Myanmar_Family7")
                 ]
             ]
         ),

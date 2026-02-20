@@ -134,7 +134,7 @@ Nᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorro
                     [
                         [
                             InlineKeyboardButton(
-                                text="Aᴅᴅ ᴍᴇ 🌋",
+                                text="Aᴅᴅ ᴍᴇ 𝐵𝐴𝐵𝑌🤍",
                                 url=f"https://t.me/{app.username}?startgroup=true",
                             )
                         ]
@@ -171,7 +171,7 @@ Nᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorro
                     [
                         [
                             InlineKeyboardButton(
-                                text="Aᴅᴅ ᴍᴇ🌋",
+                                text="Aᴅᴅ ᴍᴇ 𝐵𝐴𝐵𝑌🤍",
                                 url=f"https://t.me/{app.username}?startgroup=true",
                             )
                         ]
