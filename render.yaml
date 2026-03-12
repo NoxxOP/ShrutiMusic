@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: shruti-music
+    name: hydra-music
     env: python
     region: oregon
     plan: free
@@ -12,25 +12,25 @@ services:
 
     envVars:
       API_ID: 
-        value: 29448785
+        value: 33356903
       API_HASH: 
-        value: 599574f6aff0a09ebb76305b58e7e9c2
+        value: 6250639c6b9233162e93113b53ec1164
       API_KEY:
         sync: false
       BOT_TOKEN:
-        sync: false
+        value: 8406165807:AAE7dimuLSbxlm9mtvJXs03wQ-cP_fWuz1Q
       MONGO_DB_URI: 
         value: mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION
       OWNER_ID:
-        value: 7574330905
+        value: 8302382918
       OWNER_USERNAME:
-        value: WTF_WhyMeeh
+        value: ELITE_HYDRA
       BOT_USERNAME:
-        value: ShrutixMusicBot
+        value: HYDRAxMUSIC_PLAYER_BOT
       UPSTREAM_REPO:
         value: https://github.com/NoxxOP/ShrutiMusic
       STRING_SESSION:
-        sync: false
+        value: BAIhrTQApQvrghrkFNtwnHBIFVDqB9nw0vwfqZ-QG7-7FcnTG5x8wyHdPubIz8Zswl6Tb1YvBKFwmig90AYAKuBlI37FYjPuatrFUoQX8n6R8CZtl-oHmA1gqntDis0qdtkuPO44c96kY4UvLMlSHZVLk9YaK3JpMIeK44Yz3H6Xh-UZjbaq7fPeyAFDHUgO6-3YUYxHtnsXlsenq5qolLIJ9SEoolav2hWcQN1IC8CBPCF1w-zTthfaQ3SrQ82IMdmxbIXrmid7xvIiTqPgT-Flhm4C3moMPOeO6f0XN3N7r-u81n_PaRE0cwQe7P0mWpQ34YbRAWGn401A_TNLAjt4crGGLwAAAAG04yunAA
       GIT_TOKEN:
         sync: false
       HEROKU_API_KEY:
@@ -38,18 +38,18 @@ services:
       HEROKU_APP_NAME:
         sync: false
       LOG_GROUP_ID:
-        value: -1002321189618
+        value: -1003721695263
       SUPPORT_GROUP:
-        value: https://t.me/ShrutiBotsupport
+        value: https://t.me/gang_ster1
       SUPPORT_CHANNEL:
-        value: https://t.me/ShrutiBots
+        value: https://t.me/tlagc
       INSTAGRAM:
-        value: https://instagram.com/yaduwanshi_nand
+        value: https://instagram.com/mr_hydra10
       YOUTUBE:
-        value: https://youtube.com/@NandEditz
+        value: https://youtube.com/@hydrahunter10
       GITHUB:
         value: https://github.com/NoxxOP
       DONATE:
         value: https://t.me/ShrutiBots/91
       START_IMG_URL:
-        sync: false
+        value: https://i.ibb.co/RKqTB9r/x.jpg
