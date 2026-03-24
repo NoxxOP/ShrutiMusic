@@ -11,10 +11,10 @@ class Nand(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting bot...")
         super().__init__(
-            name="ShrutiMusic",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            bot_token=config.BOT_TOKEN,
+            name="⏤ 𝐅 𝐋 𝐎 𝐑 𝐀 𝚇 𝐌 𝚄 𝚂 𝐈 𝐂 𝂈̽ ᰼ 🌷",
+            api_id=config.32426469,
+            api_hash=config.6cc009055eb3c64d5b50d6cea35ebee8,
+            bot_token=config.7981788706:AAEhfm_Ies2U8kvFbjj86fU7iYZSR-4F9E4,
             in_memory=True,
             parse_mode=ParseMode.HTML,
             max_concurrent_transmissions=7,
@@ -32,7 +32,7 @@ class Nand(Client):
             [
                 [
                     InlineKeyboardButton(
-                        text="Add Me To Your Group",
+                        text="Add Me Baby Your Group",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
