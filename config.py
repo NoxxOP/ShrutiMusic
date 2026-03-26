@@ -5,15 +5,15 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-OWNER_ID = int(os.getenv("OWNER_ID", None))
-OWNER_USERNAME = os.getenv("OWNER_USERNAME", "WTF_WhyMeeh")
-BOT_USERNAME = os.getenv("BOT_USERNAME", "ShrutixMusicBot")
+API_ID = int(os.getenv("32426469"))
+API_HASH = os.getenv("6cc009055eb3c64d5b50d6cea35ebee8")
+BOT_TOKEN = os.getenv("7981788706:AAEpCPckAoFdDRokiNP5dqB69N-YwmvxVXQ")
+OWNER_ID = int(os.getenv("8353047575", None))
+OWNER_USERNAME = os.getenv("OWNER_USERNAME", "Zrfly")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "Floraa_music_bot")
 
 MONGO_DB_URI = os.getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
+LOG_GROUP_ID = int(os.getenv("-1002951928066", None))
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
@@ -21,13 +21,13 @@ UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/NoxxOP/ShrutiMusi
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/ShrutiBots")
-SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/ShrutiBotsSupport")
-INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/yaduwanshi_nand")
-YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@NandEditz")
-GITHUB = os.getenv("GITHUB", "https://github.com/NoxxOP")
-DONATE = os.getenv("DONATE", "https://t.me/ShrutiBots/91")
-PRIVACY_LINK = os.getenv("PRIVACY_LINK", "https://graph.org/Privacy-Policy-05-01-30")
+SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/MOONIEEZ")
+SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/+NQGCtLEJJEo3OWY1")
+INSTAGRAM = os.getenv("INSTAGRAM", "https://www.instagram.com/ig_rahul_singh_109/")
+YOUTUBE = os.getenv("YOUTUBE", "https://www.youtube.com/@Sasuke-Plays-YT")
+GITHUB = os.getenv("GITHUB", "https://t.me/+u7BE4uirNvBjZTky")
+DONATE = os.getenv("DONATE", "https://t.me/ABOUTxYUTA/12")
+PRIVACY_LINK = os.getenv("PRIVACY_LINK", "https://t.me/+u7BE4uirNvBjZTky")
 
 DURATION_LIMIT_MIN = int(os.getenv("DURATION_LIMIT", 300))
 PLAYLIST_FETCH_LIMIT = int(os.getenv("PLAYLIST_FETCH_LIMIT", 25))
@@ -38,7 +38,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(os.getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", None)
 
-STRING1 = os.getenv("STRING_SESSION", None)
+STRING1 = os.getenv("BAJdu6kAWWID1CsbRuIZDOckUNwWWqncTKbTf-8SDL2koa70qgrdBHdVhFkJag4yem2UKCAEQZaHJSzBGx6Wvsq9WDNdgRHOa-nlameaeJdyS_o5iIAcgOw-GS7E-sKGSnmCPW5dkOBVS0SBpzbAHuhFWwKiAJpeelb0ATsCwzrqJ_n7VYOyy_TC_JDsgCAos_I2XWGZsnW8-67ZO1MNx5cspd7j_ME-GDrcvpcP2z0pIeTe1XQToTFkeTj71Ne5livMKZFlu-yXC4hUenPtyny-a9EoeTi8_C4sipwfm35qrjxhs6bSzEUGIF7ZIPFoyw7NYy10UgsYRvAviX-wrtrnY2fORQAAAAIFzOn8AA", None)
 STRING2 = os.getenv("STRING_SESSION2", None)
 STRING3 = os.getenv("STRING_SESSION3", None)
 STRING4 = os.getenv("STRING_SESSION4", None)
@@ -46,18 +46,18 @@ STRING5 = os.getenv("STRING_SESSION5", None)
 
 AUTO_LEAVING_ASSISTANT = bool(os.getenv("AUTO_LEAVING_ASSISTANT", False))
 
-START_IMG_URL = os.getenv("START_IMG_URL", "https://files.catbox.moe/7q8bfg.jpg")
-PING_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-PLAYLIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/eehxb4.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/eehxb4.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
+START_IMG_URL = os.getenv("START_IMG_URL", "https://files.catbox.moe/abhzua.mp4")
+PING_IMG_URL = "https://files.catbox.moe/t229wh.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/zadcp6.mp4"
+STATS_IMG_URL = "https://files.catbox.moe/i1xlds.mp4"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/hcgw94.mp4"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/hcgw94.mp4"
+STREAM_IMG_URL = "https://files.catbox.moe/fme4nt.mp4"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/hcgw94.mp4"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/kveuxo.mp4"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/w9o758.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/ctwd9t.mp4"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/ctwd9t.mp4"
 
 BANNED_USERS = filters.user()
 adminlist = {}
