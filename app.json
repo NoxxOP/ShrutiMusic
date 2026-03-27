@@ -74,7 +74,7 @@
     },
     "SUPPORT_GROUP": {
       "description": "Your support group link",
-      "value": "https://t.me/ShrutiBotsupport",
+      "value": "https://t.me/ShrutiSupportChat",
       "required": false
     },
     "SUPPORT_CHANNEL": {
