@@ -12,21 +12,21 @@ services:
 
     envVars:
       API_ID: 
-        value: 29448785
+        value: 31644092
       API_HASH: 
-        value: 599574f6aff0a09ebb76305b58e7e9c2
+        value: e262cde552b427ce10d7db518d8676b6
       API_KEY:
         sync: false
-      BOT_TOKEN:
+      BOT_TOKEN: 8762877918:AAH_V8OvfY_IddZNBs8iXhuwQj1LyRkBISk
         sync: false
       MONGO_DB_URI: 
         value: mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION
       OWNER_ID:
-        value: 7574330905
+        value: 7065040481
       OWNER_USERNAME:
-        value: WTF_WhyMeeh
+        value: MAHU_MOD1
       BOT_USERNAME:
-        value: ShrutixMusicBot
+        value: TEAMH4XMUSICBOT
       UPSTREAM_REPO:
         value: https://github.com/NoxxOP/ShrutiMusic
       STRING_SESSION:
@@ -38,11 +38,11 @@ services:
       HEROKU_APP_NAME:
         sync: false
       LOG_GROUP_ID:
-        value: -1002321189618
+        value: -1003627840628
       SUPPORT_GROUP:
-        value: https://t.me/ShrutiBotsupport
+        value: https://t.me/Mahulikes2
       SUPPORT_CHANNEL:
-        value: https://t.me/ShrutiBots
+        value: https://t.me/+ih__WyXxtNQ3NTNl
       INSTAGRAM:
         value: https://instagram.com/yaduwanshi_nand
       YOUTUBE:
@@ -51,5 +51,5 @@ services:
         value: https://github.com/NoxxOP
       DONATE:
         value: https://t.me/ShrutiBots/91
-      START_IMG_URL:
+      START_IMG_URL: https://files.catbox.moe/p2na5j.jpg
         sync: false
