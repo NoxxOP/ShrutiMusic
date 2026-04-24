@@ -23,8 +23,8 @@ GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/music_spport")
 SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/ShrutiBotsSupport")
-INSTAGRAM = os.getenv("INSTAGRAM", "https://www.instagram.com/itz_attitude_boy_uff?igsh=MXFmbWl6MjFkNm1jcg==")
-YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@s.k.bhai.on.top794?si=2cwvKY5JhbGNmmVU")
+INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/yaduwanshi_nand")
+YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@NandEditz")
 PRIVACY_LINK = os.getenv("PRIVACY_LINK", "https://graph.org/Privacy-Policy-05-01-30")
 
 DURATION_LIMIT_MIN = int(os.getenv("DURATION_LIMIT", 300))
