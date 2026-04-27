@@ -10,18 +10,18 @@ API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID = int(os.getenv("OWNER_ID", None))
 OWNER_USERNAME = os.getenv("OWNER_USERNAME", "WTF_WhyMeeh")
-BOT_USERNAME = os.getenv("BOT_USERNAME", "ShrutixMusicBot")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "Senorita_Music11_Bot")
 
 MONGO_DB_URI = os.getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/NoxxOP/ShrutiMusic")
+UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/sksahnawaj11-art/ShrutiMusic")
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/ShrutiBots")
+SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/music_spport")
 SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/ShrutiBotsSupport")
 INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/yaduwanshi_nand")
 YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@NandEditz")
@@ -46,18 +46,18 @@ STRING5 = os.getenv("STRING_SESSION5", None)
 
 AUTO_LEAVING_ASSISTANT = bool(os.getenv("AUTO_LEAVING_ASSISTANT", False))
 
-START_IMG_URL = os.getenv("START_IMG_URL", "https://files.catbox.moe/7q8bfg.jpg")
-PING_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-PLAYLIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/eehxb4.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/eehxb4.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
+START_IMG_URL = os.getenv("START_IMG_URL", "https://h.uguu.se/sUCJFDph.jpg")
+PING_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+PLAYLIST_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+STATS_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+TELEGRAM_AUDIO_URL = "https://h.uguu.se/sUCJFDph.jpg"
+TELEGRAM_VIDEO_URL = "https://h.uguu.se/sUCJFDph.jpg"
+STREAM_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+SOUNCLOUD_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+YOUTUBE_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://h.uguu.se/sUCJFDph.jpg"
 
 BANNED_USERS = filters.user()
 adminlist = {}
