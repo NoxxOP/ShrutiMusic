@@ -30,7 +30,7 @@ unidecode
 youtube-search
 youtube-search-python
 py-yt-search
-yt-dlp==2024.07.16
+yt-dlp
 # ===========================================
 # ©️ 2025 Nand Yaduwanshi , aka @NoxxOP
 # 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
