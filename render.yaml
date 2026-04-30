@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: shruti-music
+    name: Astarr Music
     env: python
     region: oregon
     plan: free
@@ -11,25 +11,25 @@ services:
     autoDeploy: true
 
     envVars:
-      API_ID: 
+      API_ID: 23057641
         value: 29448785
-      API_HASH: 
+      API_HASH: 4858e8a1daa57a3211103d0266271058
         value: 599574f6aff0a09ebb76305b58e7e9c2
       API_KEY:
         sync: false
       BOT_TOKEN:
         sync: false
       MONGO_DB_URI: 
-        value: mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION
-      OWNER_ID:
+        value: mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0.
+      OWNER_ID:8785619142
         value: 7574330905
       OWNER_USERNAME:
-        value: WTF_WhyMeeh
+        value: @SIKANDER_025
       BOT_USERNAME:
-        value: ShrutixMusicBot
+        value: @AstarrMusicBot
       UPSTREAM_REPO:
         value: https://github.com/NoxxOP/ShrutiMusic
-      STRING_SESSION:
+      STRING_SESSION:BQFf1OkAE9d_nHv2RdW8Tnlf0uFIu16QV-MqxfbEL2eLutNzA3vU3666mAIxaUM0AF2c31WtK3M06IGpB6TZk0Ix-Lrz9ngMd2xIsQ0Jk9bNI4odWhJA8nD3PJ05gx4DuxRgQ2_yCuKw8LUg78Q22S6xvfp5xl5LpoTz0CujgmDtGFDyMGWoq7X8hqK4gfKDxBpINgxEjpaOKOWlZV5E8XfrA0kyYtNgNkN67qWUCjvJVywwRRMUSruAhYvF6w8T8zWXmHGudh3-XbcL8hPPldqyGTUr4zy7T4dXqNDwFaid-O7MfHNnK8WJtTL-4UPv8kOkop8ijkFUgE62ico2FQckzEYW8AAAAAIGJeJYAA
         sync: false
       GIT_TOKEN:
         sync: false
@@ -37,15 +37,15 @@ services:
         sync: false
       HEROKU_APP_NAME:
         sync: false
-      LOG_GROUP_ID:
+      LOG_GROUP_ID:-1003977469179
         value: -1002321189618
-      SUPPORT_GROUP:
+      SUPPORT_GROUP:https://t.me/AstarrMusicSupport
         value: https://t.me/ShrutiBotsupport
-      SUPPORT_CHANNEL:
+      SUPPORT_CHANNEL:https://t.me/AstarrMusicChannel
         value: https://t.me/ShrutiBots
-      INSTAGRAM:
+      INSTAGRAM:https://www.instagram.com/sikander__025?igsh=OWl1ZWR6bXU5NTRs
         value: https://instagram.com/yaduwanshi_nand
-      YOUTUBE:
+      YOUTUBE:https://youtube.com/@sikander_025?si=OZ65gWSUFsgRJrJ-
         value: https://youtube.com/@NandEditz
       GITHUB:
         value: https://github.com/NoxxOP
