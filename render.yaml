@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Astarr Music
+    name: Astarr Music 
     env: python
     region: oregon
     plan: free
