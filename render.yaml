@@ -12,7 +12,6 @@ services:
 
     envVars:
       API_ID:  23057641
-        value: 29448785
       API_HASH: 4858e8a1daa57a3211103d0266271058
         value: 599574f6aff0a09ebb76305b58e7e9c2
       API_KEY:
