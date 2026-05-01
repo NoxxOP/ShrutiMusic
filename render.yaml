@@ -11,7 +11,7 @@ services:
     autoDeploy: true
 
     envVars:
-      API_ID: 
+        key: API_ID: 
         value: 23057641
       API_HASH: 
         value: 4858e8a1daa57a3211103d0266271058
