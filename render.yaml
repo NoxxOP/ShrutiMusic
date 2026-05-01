@@ -17,7 +17,8 @@ services:
         value: 4858e8a1daa57a3211103d0266271058
       API_KEY:
         sync: false
-      BOT_TOKEN: 8511575655:AAGPB_KpHvHve3d6v8QChWvM8TzQjqJR-Yc
+      BOT_TOKEN: 
+        value: 8511575655:AAGPB_KpHvHve3d6v8QChWvM8TzQjqJR-Yc
         sync: false
       MONGO_DB_URI: 
         value: mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0
