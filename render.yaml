@@ -38,18 +38,18 @@ services:
       HEROKU_APP_NAME:
         sync: false
       LOG_GROUP_ID:
-        value: -1002321189618
+        value: -1003977469179
       SUPPORT_GROUP:
-        value: https://t.me/ShrutiBotsupport
+        value: https://t.me/AstarrMusicSupport
       SUPPORT_CHANNEL:
-        value: https://t.me/ShrutiBots
+        value: https://t.me/AstarrMusicChannel
       INSTAGRAM:
-        value: https://instagram.com/yaduwanshi_nand
+        value: https://instagram.com/sikander__025
       YOUTUBE:
-        value: https://youtube.com/@NandEditz
+        value: https://youtube.com/@sikander_025
       GITHUB:
         value: https://github.com/NoxxOP
       DONATE:
         value: https://t.me/ShrutiBots/91
-      START_IMG_URL:
+      START_IMG_URL: https://kommodo.ai/i/UD6SlEPN5zcScoxBXEPS
         sync: false
