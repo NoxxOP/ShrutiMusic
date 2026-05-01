@@ -40,4 +40,3 @@ services:
       DONATE:
         value: https://t.me/ShrutiBots/91
       START_IMG_URL: https://kommodo.ai/i/UD6SlEPN5zcScoxBXEPS
-        sync: false
