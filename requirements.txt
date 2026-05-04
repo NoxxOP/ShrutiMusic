@@ -31,6 +31,8 @@ youtube-search
 youtube-search-python
 py-yt-search
 yt-dlp
+flask
+gunicorn
 # ===========================================
 # ©️ 2025 Nand Yaduwanshi , aka @NoxxOP
 # 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
