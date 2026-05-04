@@ -1,1 +1,2 @@
-python3 -m ShrutiMusic
+#!/bin/bash
+python3 app.py
