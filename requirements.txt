@@ -32,3 +32,4 @@ py-yt-search
 yt-dlp
 flask
 gunicorn
+subprocess
