@@ -5,11 +5,14 @@ services:
     region: oregon
     plan: free
 
-    buildCommand: apt-get update && apt-get install -y ffmpeg && pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: python3 -m ShrutiMusic
     autoDeploy: true
 
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+
       - key: API_ID
         value: "23057641"
 
@@ -40,15 +43,6 @@ services:
       - key: STRING_SESSION
         value: "BQFf1OkAE9d_nHv2RdW8Tnlf0uFIu16QV-MqxfbEL2eLutNzA3vU3666mAIxaUM0AF2c31WtK3M06IGpB6TZk0Ix-Lrz9ngMd2xIsQ0Jk9bNI4odWhJA8nD3PJ05gx4DuxRgQ2_yCuKw8LUg78Q22S6xvfp5xl5LpoTz0CujgmDtGFDyMGWoq7X8hqK4gfKDxBpINgxEjpaOKOWlZV5E8XfrA0kyYtNgNkN67qWUCjvJVywwRRMUSruAhYvF6w8T8zWXmHGudh3-XbcL8hPPldqyGTUr4zy7T4dXqNDwFaid-O7MfHNnK8WJtTL-4UPv8kOkop8ijkFUgE62ico2FQckzEYW8AAAAAIGJeJYAA"
 
-      - key: GIT_TOKEN
-        value: ""
-
-      - key: HEROKU_API_KEY
-        value: ""
-
-      - key: HEROKU_APP_NAME
-        value: ""
-
       - key: LOG_GROUP_ID
         value: "-1003977469179"
 
@@ -57,18 +51,3 @@ services:
 
       - key: SUPPORT_CHANNEL
         value: "https://t.me/AstarrMusicChannel"
-
-      - key: INSTAGRAM
-        value: "https://instagram.com/sikander__025"
-
-      - key: YOUTUBE
-        value: "https://youtube.com/@sikander_025"
-
-      - key: GITHUB
-        value: "https://github.com/NoxxOP"
-
-      - key: DONATE
-        value: "https://t.me/ShrutiBots/91"
-
-      - key: START_IMG_URL
-        value: "https://kommodo.ai/i/UD6SlEPN5zcScoxBXEPS"
