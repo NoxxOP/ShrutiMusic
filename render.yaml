@@ -14,16 +14,16 @@ services:
         value: 3.10.13
 
       - key: API_ID
-        value: "23057641"
+        value: "37167023"
 
       - key: API_HASH
-        value: "4858e8a1daa57a3211103d0266271058"
+        value: "06879a10307f6e6db8114b911295a6ae"
 
       - key: API_KEY
         value: ""
 
       - key: BOT_TOKEN
-        value: "8511575655:AAGPB_KpHvHve3d6v8QChWvM8TzQjqJR-Yc"
+        value: "8511575655:AAFp6vSTokoh5Ou6GVxrd6XH90-C53Gvve4"
 
       - key: MONGO_DB_URI
         value: "mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0"
@@ -41,7 +41,7 @@ services:
         value: "https://github.com/sikander025/AstarrMusic1"
 
       - key: STRING_SESSION
-        value: "BQFf1OkAE9d_nHv2RdW8Tnlf0uFIu16QV-MqxfbEL2eLutNzA3vU3666mAIxaUM0AF2c31WtK3M06IGpB6TZk0Ix-Lrz9ngMd2xIsQ0Jk9bNI4odWhJA8nD3PJ05gx4DuxRgQ2_yCuKw8LUg78Q22S6xvfp5xl5LpoTz0CujgmDtGFDyMGWoq7X8hqK4gfKDxBpINgxEjpaOKOWlZV5E8XfrA0kyYtNgNkN67qWUCjvJVywwRRMUSruAhYvF6w8T8zWXmHGudh3-XbcL8hPPldqyGTUr4zy7T4dXqNDwFaid-O7MfHNnK8WJtTL-4UPv8kOkop8ijkFUgE62ico2FQckzEYW8AAAAAIGJeJYAA"
+        value: "AgI3H68ABpCm_mFRt8VBUQpDIJdL00MEfjf02qU33r0Xzhpv1fjG2kmPF22OV61K_qHK4m15VCCsrjA662SFe9DsoRFRx2b_Mxqd13NlfwS7dUgQhVarGlO-vkCHy0yUTdFYm8D4jGMphvdE3W8Mt-7F2LP7kztuIKVjDRH9Fob8lbKTnnLaZpWhpiG5jM9Rr6Rl1Ss0ZvR_cFjCV30r6pLCBLafVt-7rwQ23JHClgDLp15VM1rY1HzcuguJC6kUj7Dm9fvJ9h8QAEK8q80IrjgqiRz02B8oHw8u-LR2SIOQpk5Oc2SXQ3KOmTTEuJ1CORKl0ySbpS1rTT0P2kvdWVvki81jzAAAAAILqejGAA"
 
       - key: LOG_GROUP_ID
         value: "-1003977469179"
