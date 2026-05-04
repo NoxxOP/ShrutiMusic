@@ -1,6 +1,7 @@
 from flask import Flask
 import threading
 import os
+import subprocess
 
 app = Flask(__name__)
 
@@ -11,7 +12,7 @@ def home():
 def run_bot():
     while True:
         try:
-            os.system("python3 -m ShrutiMusic")
+            subprocess.run(["python3", "-m", "ShrutiMusic"])
         except Exception as e:
             print(f"Bot crashed: {e}")
 
