@@ -5,26 +5,26 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-OWNER_ID = int(os.getenv("OWNER_ID", None))
-OWNER_USERNAME = os.getenv("OWNER_USERNAME", "WTF_WhyMeeh")
-BOT_USERNAME = os.getenv("BOT_USERNAME", "ShrutixMusicBot")
+API_ID = 37167023
+API_HASH = os.getenv("06879a10307f6e6db8114b911295a6ae")
+BOT_TOKEN = os.getenv("8511575655:AAFp6vSTokoh5Ou6GVxrd6XH90-C53Gvve4")
+OWNER_ID = 8785619142
+OWNER_USERNAME = os.getenv("SIKANDER_025")
+BOT_USERNAME = os.getenv("AstarrMusicBot")
 
-MONGO_DB_URI = os.getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
+MONGO_DB_URI = os.getenv("mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = "-1003977469179"
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/NoxxOP/ShrutiMusic")
+UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/sikander025/AstarrMusic1")
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/ShrutiBots")
-SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/ShrutiBotsSupport")
-INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/yaduwanshi_nand")
-YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@NandEditz")
+SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/AstarrMusicChannel")
+SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/AstarrMusicSupport")
+INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/sikander__025")
+YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@SIKANDER_025")
 GITHUB = os.getenv("GITHUB", "https://github.com/NoxxOP")
 DONATE = os.getenv("DONATE", "https://t.me/ShrutiBots/91")
 PRIVACY_LINK = os.getenv("PRIVACY_LINK", "https://graph.org/Privacy-Policy-05-01-30")
@@ -38,7 +38,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(os.getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", None)
 
-STRING1 = os.getenv("STRING_SESSION", None)
+STRING1 = "AgI3H68ABpCm_mFRt8VBUQpDIJdL00MEfjf02qU33r0Xzhpv1fjG2kmPF22OV61K_qHK4m15VCCsrjA662SFe9DsoRFRx2b_Mxqd13NlfwS7dUgQhVarGlO-vkCHy0yUTdFYm8D4jGMphvdE3W8Mt-7F2LP7kztuIKVjDRH9Fob8lbKTnnLaZpWhpiG5jM9Rr6Rl1Ss0ZvR_cFjCV30r6pLCBLafVt-7rwQ23JHClgDLp15VM1rY1HzcuguJC6kUj7Dm9fvJ9h8QAEK8q80IrjgqiRz02B8oHw8u-LR2SIOQpk5Oc2SXQ3KOmTTEuJ1CORKl0ySbpS1rTT0P2kvdWVvki81jzAAAAAILqejGAA"
 STRING2 = os.getenv("STRING_SESSION2", None)
 STRING3 = os.getenv("STRING_SESSION3", None)
 STRING4 = os.getenv("STRING_SESSION4", None)

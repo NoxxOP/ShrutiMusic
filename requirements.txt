@@ -2,7 +2,6 @@ pyrofork
 gTTS
 aiofiles
 aiohttp
-asyncio
 beautifulsoup4
 dnspython
 ffmpeg-python
@@ -12,7 +11,7 @@ heroku3
 httpx
 motor
 numpy
-opencv-python
+opencv-python-headless
 pytz
 pillow==9.5.0
 psutil
@@ -31,9 +30,5 @@ youtube-search
 youtube-search-python
 py-yt-search
 yt-dlp
-# ===========================================
-# ©️ 2025 Nand Yaduwanshi , aka @NoxxOP
-# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
-# 📢 Telegram Channel : https://t.me/ShrutiBots
-# ===========================================
-
+flask
+gunicorn

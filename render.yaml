@@ -1,55 +1,53 @@
 services:
   - type: web
-    name: shruti-music
+    name: astarr-music
     env: python
     region: oregon
     plan: free
-    buildCommand: |
-      apt-get update && apt-get install -y ffmpeg
-      pip install -r requirements.txt
-    startCommand: python3 -m ShrutiMusic
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
     autoDeploy: true
 
     envVars:
-      API_ID: 
-        value: 29448785
-      API_HASH: 
-        value: 599574f6aff0a09ebb76305b58e7e9c2
-      API_KEY:
-        sync: false
-      BOT_TOKEN:
-        sync: false
-      MONGO_DB_URI: 
-        value: mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION
-      OWNER_ID:
-        value: 7574330905
-      OWNER_USERNAME:
-        value: WTF_WhyMeeh
-      BOT_USERNAME:
-        value: ShrutixMusicBot
-      UPSTREAM_REPO:
-        value: https://github.com/NoxxOP/ShrutiMusic
-      STRING_SESSION:
-        sync: false
-      GIT_TOKEN:
-        sync: false
-      HEROKU_API_KEY:
-        sync: false
-      HEROKU_APP_NAME:
-        sync: false
-      LOG_GROUP_ID:
-        value: -1002321189618
-      SUPPORT_GROUP:
-        value: https://t.me/ShrutiBotsupport
-      SUPPORT_CHANNEL:
-        value: https://t.me/ShrutiBots
-      INSTAGRAM:
-        value: https://instagram.com/yaduwanshi_nand
-      YOUTUBE:
-        value: https://youtube.com/@NandEditz
-      GITHUB:
-        value: https://github.com/NoxxOP
-      DONATE:
-        value: https://t.me/ShrutiBots/91
-      START_IMG_URL:
-        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.13
+
+      - key: API_ID
+        value: "37167023"
+
+      - key: API_HASH
+        value: "06879a10307f6e6db8114b911295a6ae"
+
+      - key: API_KEY
+        value: ""
+
+      - key: BOT_TOKEN
+        value: "8511575655:AAFp6vSTokoh5Ou6GVxrd6XH90-C53Gvve4"
+
+      - key: MONGO_DB_URI
+        value: "mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0"
+
+      - key: OWNER_ID
+        value: "8785619142"
+
+      - key: OWNER_USERNAME
+        value: "SIKANDER_025"
+
+      - key: BOT_USERNAME
+        value: "AstarrMusicBot"
+
+      - key: UPSTREAM_REPO
+        value: "https://github.com/sikander025/AstarrMusic1"
+
+      - key: STRING_SESSION
+        value: "AgI3H68ABpCm_mFRt8VBUQpDIJdL00MEfjf02qU33r0Xzhpv1fjG2kmPF22OV61K_qHK4m15VCCsrjA662SFe9DsoRFRx2b_Mxqd13NlfwS7dUgQhVarGlO-vkCHy0yUTdFYm8D4jGMphvdE3W8Mt-7F2LP7kztuIKVjDRH9Fob8lbKTnnLaZpWhpiG5jM9Rr6Rl1Ss0ZvR_cFjCV30r6pLCBLafVt-7rwQ23JHClgDLp15VM1rY1HzcuguJC6kUj7Dm9fvJ9h8QAEK8q80IrjgqiRz02B8oHw8u-LR2SIOQpk5Oc2SXQ3KOmTTEuJ1CORKl0ySbpS1rTT0P2kvdWVvki81jzAAAAAILqejGAA"
+
+      - key: LOG_GROUP_ID
+        value: "-1003977469179"
+
+      - key: SUPPORT_GROUP
+        value: "https://t.me/AstarrMusicSupport"
+
+      - key: SUPPORT_CHANNEL
+        value: "https://t.me/AstarrMusicChannel"
