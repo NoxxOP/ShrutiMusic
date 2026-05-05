@@ -12,7 +12,7 @@ OWNER_ID = 8785619142
 OWNER_USERNAME = os.getenv("SIKANDER_025")
 BOT_USERNAME = os.getenv("AstarrMusicBot")
 
-MONGO_DB_URI = os.getenv("mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0", None)
+MONGO_DB_URI = os.getenv("mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0")
 LOG_GROUP_ID = "-1003977469179"
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
