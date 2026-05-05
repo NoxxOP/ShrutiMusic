@@ -6,7 +6,7 @@ services:
     plan: free
 
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 app.py
+    startCommand: python3 -m ShrutiMusic
     autoDeploy: true
 
     envVars:
