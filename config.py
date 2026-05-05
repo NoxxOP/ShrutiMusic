@@ -8,12 +8,12 @@ load_dotenv()
 API_ID = 37167023
 API_HASH = os.getenv("06879a10307f6e6db8114b911295a6ae")
 BOT_TOKEN = os.getenv("8511575655:AAFp6vSTokoh5Ou6GVxrd6XH90-C53Gvve4")
-OWNER_ID = int(os.getenv("8785619142"))
+OWNER_ID = 8785619142
 OWNER_USERNAME = os.getenv("SIKANDER_025")
 BOT_USERNAME = os.getenv("AstarrMusicBot")
 
 MONGO_DB_URI = os.getenv("mongodb+srv://astarrmusicbot:Sikander9898@cluster0.jskselv.mongodb.net/?appName=Cluster0", None)
-LOG_GROUP_ID = int(os.getenv("1003977469179"))
+LOG_GROUP_ID = "-1003977469179"
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
