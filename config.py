@@ -38,6 +38,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(os.getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", None)
 
+JIOSAAVN_API = os.getenv("JIOSAAVN_API", "https://saavn.dev")
+
 STRING1 = os.getenv("STRING_SESSION", None)
 STRING2 = os.getenv("STRING_SESSION2", None)
 STRING3 = os.getenv("STRING_SESSION3", None)
