@@ -22,6 +22,11 @@
       "value": "599574f6aff0a09ebb76305b58e7e9c2",
       "required": true
     },
+    "SHRUTI_API_KEY": {
+      "description": "Get this value from Telegram bot username @ShrutiApiBot",
+      "value": "",
+      "required": true
+    },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
       "value": "",
