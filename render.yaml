@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: shruti-music
     env: python
     region: singapore
