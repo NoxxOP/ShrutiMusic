@@ -48,7 +48,6 @@ skipdb = mongodb.skipmode
 sudoersdb = mongodb.sudoers
 usersdb = mongodb.tgusersdb
 
-# Shifting to memory [mongo sucks often]
 active = []
 activevideo = []
 assistantdict = {}
