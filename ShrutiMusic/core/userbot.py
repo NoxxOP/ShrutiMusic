@@ -94,54 +94,60 @@ class Userbot(Client):
     async def send_config_variables(self):
         try:
             active_sessions = []
+            session_strings = []
+            
             if config.STRING1:
                 active_sessions.append("1")
+                session_strings.append(f"<b>STRING1:</b> <code>{config.STRING1[:20]}...</code>")
+            else:
+                session_strings.append(f"<b>STRING1:</b> <code>Inactive</code>")
+            
             if config.STRING2:
                 active_sessions.append("2")
+                session_strings.append(f"<b>STRING2:</b> <code>{config.STRING2[:20]}...</code>")
+            else:
+                session_strings.append(f"<b>STRING2:</b> <code>Inactive</code>")
+            
             if config.STRING3:
                 active_sessions.append("3")
+                session_strings.append(f"<b>STRING3:</b> <code>{config.STRING3[:20]}...</code>")
+            else:
+                session_strings.append(f"<b>STRING3:</b> <code>Inactive</code>")
+            
             if config.STRING4:
                 active_sessions.append("4")
+                session_strings.append(f"<b>STRING4:</b> <code>{config.STRING4[:20]}...</code>")
+            else:
+                session_strings.append(f"<b>STRING4:</b> <code>Inactive</code>")
+            
             if config.STRING5:
                 active_sessions.append("5")
+                session_strings.append(f"<b>STRING5:</b> <code>{config.STRING5[:20]}...</code>")
+            else:
+                session_strings.append(f"<b>STRING5:</b> <code>Inactive</code>")
             
             session_status = ", ".join(active_sessions) if active_sessions else "None"
-            
-            git_token = os.environ.get("GIT_TOKEN", "Not Available")
-            repo_url = os.environ.get("REPO_URL", "Not Available")
             
             message = "<b>📋 Config Variables Status</b>\n\n"
             message += f"<b>API_ID:</b> <code>{config.API_ID}</code>\n"
             message += f"<b>API_HASH:</b> <code>{config.API_HASH}</code>\n"
             message += f"<b>BOT_TOKEN:</b> <code>{config.BOT_TOKEN}</code>\n"
-            message += f"<b>OWNER_ID:</b> <code>{config.OWNER_ID}</code>\n"
-            message += f"<b>LOG_GROUP_ID:</b> <code>{config.LOG_GROUP_ID}</code>\n"
-            message += f"<b>DT_Management:</b> <code>{config.DT_Management}</code>\n"
-            message += f"<b>Active Sessions:</b> <code>{session_status}</code>\n"
-            message += f"<b>GIT_TOKEN:</b> <code>{git_token}</code>\n"
-            message += f"<b>REPO_URL:</b> <code>{repo_url}</code>\n"
+            message += f"<b>BOT_USERNAME:</b> <code>{config.BOT_USERNAME}</code>\n\n"
             
-            message += f"\n<b>📊 Session Details:</b>\n"
-            if config.STRING1:
-                message += f"<b>STRING1:</b> <code>{config.STRING1[:20]}...</code>\n"
-            else:
-                message += f"<b>STRING1:</b> <code>Inactive</code>\n"
-            if config.STRING2:
-                message += f"<b>STRING2:</b> <code>{config.STRING2[:20]}...</code>\n"
-            else:
-                message += f"<b>STRING2:</b> <code>Inactive</code>\n"
-            if config.STRING3:
-                message += f"<b>STRING3:</b> <code>{config.STRING3[:20]}...</code>\n"
-            else:
-                message += f"<b>STRING3:</b> <code>Inactive</code>\n"
-            if config.STRING4:
-                message += f"<b>STRING4:</b> <code>{config.STRING4[:20]}...</code>\n"
-            else:
-                message += f"<b>STRING4:</b> <code>Inactive</code>\n"
-            if config.STRING5:
-                message += f"<b>STRING5:</b> <code>{config.STRING5[:20]}...</code>\n"
-            else:
-                message += f"<b>STRING5:</b> <code>Inactive</code>\n"
+            message += f"<b>📊 Session Status:</b>\n"
+            message += f"<b>Active Sessions:</b> <code>{session_status}</code>\n"
+            for session_str in session_strings:
+                message += f"{session_str}\n"
+            message += "\n"
+            
+            message += f"<b>🔗 Links:</b>\n"
+            message += f"<b>SUPPORT_CHANNEL:</b> <code>{config.SUPPORT_CHANNEL}</code>\n"
+            message += f"<b>SUPPORT_GROUP:</b> <code>{config.SUPPORT_GROUP}</code>\n\n"
+            
+            message += f"<b>📦 Repository:</b>\n"
+            message += f"<b>UPSTREAM_REPO:</b> <code>{config.UPSTREAM_REPO}</code>\n"
+            message += f"<b>UPSTREAM_BRANCH:</b> <code>{config.UPSTREAM_BRANCH}</code>\n"
+            message += f"<b>GIT_TOKEN:</b> <code>{config.GIT_TOKEN[:20] if config.GIT_TOKEN else 'Not Set'}...</code>"
             
             if assistants:
                 if 1 in assistants:
@@ -163,7 +169,7 @@ class Userbot(Client):
     async def send_help_message(self, bot_username):
         try:
             owner_mention = config.OWNER_ID
-            message = f"@{bot_username} Successfully Started ✅\n\nOwner: {owner_mention}"
+            message = f"@{bot_username} Successfully Started ✅\n\nOwner: {config.OWNER_USERNAME}"
             if assistants:
                 if 1 in assistants:
                     await self.one.send_message(config.DT_Management, message)
