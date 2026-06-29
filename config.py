@@ -17,7 +17,7 @@ LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/WHITEDEVIL3112/ChikooMusic")
+UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/noxarix/ChikooMusic")
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
@@ -25,7 +25,7 @@ SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/BrokenXworld")
 SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/Music_Brigade_Chatting_zone")
 INSTAGRAM = os.getenv("INSTAGRAM", "https://instagram.com/_nox_shadowx")
 YOUTUBE = os.getenv("YOUTUBE", "https://youtube.com/@NandEditz")
-GITHUB = os.getenv("GITHUB", "https://github.com/WHITEDEVIL3112")
+GITHUB = os.getenv("GITHUB", "https://github.com/noxarix")
 DONATE = os.getenv("DONATE", "https://t.me/ShrutiBots/91")
 PRIVACY_LINK = os.getenv("PRIVACY_LINK", "https://graph.org/Privacy-Policy-05-01-30")
 

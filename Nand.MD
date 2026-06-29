@@ -24,13 +24,13 @@
   
   <!-- Bold social stats with high contrast -->
   <p>
-    <a href="https://github.com/WHITEDEVIL3112/ChikooMusic/fork">
+    <a href="https://github.com/noxarix/ChikooMusic/fork">
       <img src="https://img.shields.io/github/forks/NoxxOP/ShrutiMusic?style=social&logo=github&labelColor=FF1493&color=00CED1" alt="GitHub Forks">
     </a>
-    <a href="https://github.com/WHITEDEVIL3112/ChikooMusic/stargazers">
+    <a href="https://github.com/noxarix/ChikooMusic/stargazers">
       <img src="https://img.shields.io/github/stars/NoxxOP/ShrutiMusic?style=social&logo=github&labelColor=FF4500&color=32CD32" alt="GitHub Stars">
     </a>
-    <a href="https://github.com/WHITEDEVIL3112/ChikooMusic/graphs/contributors">
+    <a href="https://github.com/noxarix/ChikooMusic/graphs/contributors">
       <img src="https://img.shields.io/github/contributors/NoxxOP/ShrutiMusic?style=social&logo=github&labelColor=DC143C&color=FFD700" alt="GitHub Contributors">
     </a>
   </p>
@@ -43,17 +43,17 @@
 <div align="center">
   
   ### 🔥 Deploy to Heroku
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/WHITEDEVIL3112/ChikooMusic">
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/noxarix/ChikooMusic">
     <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-FF0080?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000080" width="280px" alt="Deploy to Heroku">
   </a>
   
   ### ☁️ Deploy to Render (Free)
-  <a href="https://render.com/deploy?repo=https://github.com/WHITEDEVIL3112/ChikooMusic">
+  <a href="https://render.com/deploy?repo=https://github.com/noxarix/ChikooMusic">
     <img src="https://img.shields.io/badge/Deploy%20To%20Render-00FF80?style=for-the-badge&logo=render&logoColor=black&labelColor=800080" width="280px" alt="Deploy to Render">
   </a>
   
   ### 🎵 Simple Music Bot
-  <a href="https://github.com/WHITEDEVIL3112/ChikooMusic">
+  <a href="https://github.com/noxarix/ChikooMusic">
     <img src="https://img.shields.io/badge/Simple%20Music%20Bot-FF4000?style=for-the-badge&logo=github&logoColor=white&labelColor=008000" width="280px" alt="Simple Music Bot">
   </a>
   
@@ -140,7 +140,7 @@ sudo apt-get install -y nodejs
 #### Clone the Repository
 
 ```bash
-git clone https://github.com/WHITEDEVIL3112/ChikooMusic
+git clone https://github.com/noxarix/ChikooMusic
 ```
 
 ```bash
@@ -236,7 +236,7 @@ Example : `screen -r 108108`
 ## ☁️ Heroku Deployment
 
 <div align="center">
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/WHITEDEVIL3112/ChikooMusic">
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/noxarix/ChikooMusic">
     <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-FF0080?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000080" width="250px" alt="Deploy to Heroku">
   </a>
 </div>
@@ -289,7 +289,7 @@ Use our Session Generator Bot: [@Sessionbbbot](https://t.me/Sessionbbbot)
 
 <div align="center">
   
-**👨‍💻 Main Developer:** [Marine](https://github.com/WHITEDEVIL3112)
+**👨‍💻 Main Developer:** [Marine](https://github.com/noxarix)
 
 **🙏 Special Thanks:** All contributors who helped make this project better
 

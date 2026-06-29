@@ -28,7 +28,7 @@ services:
       BOT_USERNAME:
         value: ShrutixMusicBot
       UPSTREAM_REPO:
-        value: https://github.com/WHITEDEVIL3112/ChikooMusic
+        value: https://github.com/noxarix/ChikooMusic
       STRING_SESSION:
         sync: false
       GIT_TOKEN:
